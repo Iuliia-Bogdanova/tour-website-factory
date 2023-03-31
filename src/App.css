@@ -1,24 +1,26 @@
 .App {
-  
-  text-align: center;
+    text-align: center;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+    background: #e6dcdb;
+    font-family: 'Verdana', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  /* height: 40vmin;
-  pointer-events: none; */
-  /* top: 0; */
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none; 
+  top: 0; 
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-} */
+} */ 
 
 .App-header {
   background-color: #e6dcdb;
@@ -44,10 +46,17 @@ body {
   }
 } */
 
-body {
-    background: lightgoldenrodyellow;
-    font-family: 'Verdana', sans-serif;
-    font-size: 20px;
+.container{
+    border: 5px solid steelblue;
+    border-radius: 25px;
+    width: 50%;
+    min-width: 400px;
+    margin: 10px auto;
+    padding: 40px 20px;
+}
+
+h1 {
+  color: #7bb0a6;
 }
 
 input {
@@ -56,15 +65,13 @@ input {
     border-radius: 5px;
 }
 
-.App {
-    text-align: center;
-}
 
-.app-title{
+
+/* .app-title{
     text-align: center;
     color: lightslategray;
     font-size: 50px;
-}
+} */
 
 .btn{
     margin: 20px;
@@ -73,7 +80,7 @@ input {
 }
 
 .add-btn{
-    background: lightslategray;
+    background: #6c8784;
     width: 100px;
     height: 40px;
 }
@@ -91,11 +98,4 @@ input {
     border: lightsteelblue 3px solid;
 }
 
-.container{
-    border: 5px solid steelblue;
-    border-radius: 25px;
-    width: 50%;
-    min-width: 400px;
-    margin: 10px auto;
-    padding: 40px 20px;
-}
+

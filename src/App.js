@@ -53,20 +53,19 @@ import "./App.css";
                 <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 {/* <p>
-                        Edit <code>src/App.js</code> and save to reload.
-                        </p>
-                        <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        Learn React
-                        </a> */}
+                            Edit <code>src/App.js</code> and save to reload.
+                            </p>
+                            <a
+                            className="App-link"
+                            href="https://reactjs.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            Learn React
+                            </a> */}
                 </header>
                 <div className="container">
-                Add card...
-                <br />
+                <h1>Add card...</h1>
                 <input
                     type="text"
                     placeholder="english"
@@ -84,16 +83,10 @@ import "./App.css";
                 </button>
                 <div>
                     {cards.map((card) => (
-                    <div
-                        key={card.id}
-                        className={
-                        "card" + (card.value.overturned ? " overturned" : "")
-                        }
-                        onClick={() => turnCard(card.id)}
-                    >
-                        {card.value.overturned
-                        ? card.value.translate
-                        : card.value.word}
+                    <div key={card.id}
+                        className={"card" + (card.value.overturned ? " overturned" : "")}
+                        onClick={() => turnCard(card.id)} > 
+                        {card.value.overturned ? card.value.translate : card.value.word}
                     </div>
                     ))}
                 </div>
