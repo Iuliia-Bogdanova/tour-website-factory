@@ -1,0 +1,70 @@
+/* Fonts */
+@font-face {
+    font-family: "Inter";
+    src: url("/template/fonts/Inter18pt-Light.woff2") format("woff2"),
+        url("/template/fonts/Inter18pt-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/template/fonts/Inter18pt-Regular.woff2") format("woff2"),
+        url("/template/fonts/Inter18pt-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/template/fonts/Inter18pt-Medium.woff2") format("woff2"),
+        url("/template/fonts/Inter18pt-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/template/fonts/Inter18pt-SemiBold.woff2") format("woff2"),
+        url("/template/fonts/Inter18pt-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/template/fonts/Inter18pt-Bold.woff2") format("woff2"),
+        url("/template/fonts/Inter18pt-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/template/fonts/Inter18pt-ExtraBold.woff") format("woff2"),
+        url("/template/fonts/Inter18pt-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* Fonts END */
+
+/* Vars */
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #111926;
+
+    --text-primary: #ffffff;
+}
+/* Vars END */
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+}
