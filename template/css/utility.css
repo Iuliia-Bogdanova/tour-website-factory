@@ -1,0 +1,57 @@
+/* Bootstrap */
+
+/* .col-auto {
+    align-items: center;
+} */
+
+/* Bootstrap END*/
+
+.container-fluid.limited {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Резиновый padding */
+.p-fluid {
+    padding-left: clamp(16px, 4vw, 40px);
+    padding-right: clamp(16px, 4vw, 40px);
+}
+
+/* Резиновый gap */
+.custom-gap {
+    gap: clamp(8px, 2vw, 20px);
+}
+
+/* Breakpoints */
+@media (min-width: 640px) {
+    .d-640-block {
+        display: block;
+    }
+}
+
+@media (width < 640px) {
+    .d-640-block {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .d-1200-block {
+        display: block;
+    }
+
+    .d-1200-none {
+        display: none;
+    }
+}
+
+@media (width < 1200px) {
+    .d-1200-block {
+        display: none;
+    }
+
+    .d-1200-none {
+        display: block;
+    }
+}

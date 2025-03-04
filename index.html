@@ -51,6 +51,138 @@
         <!-- Styles END -->
     </head>
     <body>
-        <h1><strong>Сборка "Прогресса" завершена</strong></h1>
+        <!-- Header -->
+        <header class="header">
+            <div class="container-fluid limited p-fluid">
+                <div
+                    class="row align-items-center justify-content-between flex-nowrap"
+                >
+                    <!-- Logo -->
+                    <div class="col-auto">
+                        <a href="#" class="header__logo">
+                            <img src="/template/img/logo.webp" alt="Логотип" />
+                        </a>
+                    </div>
+                    <!-- Desktop nav -->
+                    <nav class="col-auto d-1200-block">
+                        <ul
+                            class="header__menu d-flex flex-row align-items-center custom-gap"
+                        >
+                            <li><a href="#">Туры</a></li>
+                            <li><a href="#">О Компании</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#footer">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Phone -->
+                    <div class="col-auto d-640-block">
+                        <a href="tel:+77761222211" class="header__phone"
+                            >+7 (776) 122 2211</a
+                        >
+                    </div>
+                    <!-- Socials -->
+                    <div class="col-auto">
+                        <ul
+                            class="header__socials d-flex flex-row align-items-center custom-gap"
+                        >
+                            <li>
+                                <a
+                                    href="https://www.youtube.com"
+                                    class="social-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                        class="social-icon"
+                                        src="/template/svg/youtube.svg"
+                                        alt="YouTube"
+                                /></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://rutube.ru/"
+                                    class="social-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                        class="social-icon"
+                                        src="/template/svg/rutube.svg"
+                                        alt="RuTube"
+                                /></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.whatsapp.com/"
+                                    class="social-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><img
+                                        class="social-icon whatsapp-icon"
+                                        src="/template/svg/whatsapp.svg"
+                                        alt="WhatsApp"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Mobile nav btn -->
+                    <div class="col-auto d-1200-none">
+                        <button
+                            class="header__menu-btn"
+                            aria-label="Открыть меню"
+                        >
+                            <img src="/template/svg/menu-dots.svg" alt="Меню" />
+                        </button>
+                    </div>
+                    <!-- Mobile nav -->
+                    <nav
+                        id="header-menu"
+                        class="header__menu header__menu--mobile"
+                    >
+                        <div class="header__menu-top">
+                            <ul>
+                                <li><a href="#">Туры</a></li>
+                                <li><a href="#">О Компании</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#footer">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__menu-bottom">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="tel:+77761222211"
+                                        class="header__phone"
+                                    >
+                                        +7 (776) 122 2211
+                                    </a>
+                                </li>
+                                <li class="header__socials">
+                                    <a
+                                        href="https://telegram.org/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="/template/svg/tg-white.svg"
+                                            alt="Telegram"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://www.whatsapp.com"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="/template/svg/whatsapp-white.svg"
+                                            alt="WhatsApp"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <script type="module" src="/template/js/main.js"></script>
     </body>
 </html>
