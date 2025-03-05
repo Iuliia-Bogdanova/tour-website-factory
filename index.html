@@ -51,6 +51,7 @@
         <!-- Styles END -->
     </head>
     <body>
+        <div id="overlay" class="overlay"></div>
         <!-- Header -->
         <header class="header">
             <div class="container-fluid limited p-fluid">
@@ -138,16 +139,24 @@
                         class="header__menu header__menu--mobile"
                     >
                         <div class="header__menu-top">
-                            <ul>
-                                <li><a href="#">Туры</a></li>
-                                <li><a href="#">О Компании</a></li>
-                                <li><a href="#">Отзывы</a></li>
+                            <a href="#" class="header__logo">
+                                <img
+                                    class="img-size-200x53 mb-4"
+                                    src="/template/img/logo.webp"
+                                    alt="Логотип"
+                                />
+                            </a>
+                            <span class="header__menu-close">&times;</span>
+                            <ul class="fw-light">
+                                <li class="mb-2"><a href="#">Туры</a></li>
+                                <li class="mb-2"><a href="#">О Компании</a></li>
+                                <li class="mb-2"><a href="#">Отзывы</a></li>
                                 <li><a href="#footer">Контакты</a></li>
                             </ul>
                         </div>
                         <div class="header__menu-bottom">
                             <ul>
-                                <li>
+                                <li class="mb-4">
                                     <a
                                         href="tel:+77761222211"
                                         class="header__phone"
@@ -157,6 +166,7 @@
                                 </li>
                                 <li class="header__socials">
                                     <a
+                                        class="me-2"
                                         href="https://telegram.org/"
                                         target="_blank"
                                         rel="noopener noreferrer"

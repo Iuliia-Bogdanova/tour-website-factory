@@ -6,6 +6,32 @@
 
 /* Bootstrap END*/
 
+/* Font Weights */
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-extra-bold {
+    font-weight: 800;
+}
+
+/* Ограничение container-fluid */
 .container-fluid.limited {
     max-width: 1200px;
     margin-left: auto;
@@ -23,26 +49,22 @@
     gap: clamp(8px, 2vw, 20px);
 }
 
-/* Breakpoints */
-@media (min-width: 640px) {
-    .d-640-block {
-        display: block;
-    }
+/* Переопределить размер */
+.header__logo img.img-size-200x53 {
+    width: 200px;
+    height: 53px;
 }
 
+/* Breakpoints */
 @media (width < 640px) {
     .d-640-block {
         display: none;
     }
 }
 
-@media (min-width: 1200px) {
-    .d-1200-block {
+@media (min-width: 640px) {
+    .d-640-block {
         display: block;
-    }
-
-    .d-1200-none {
-        display: none;
     }
 }
 
@@ -53,5 +75,15 @@
 
     .d-1200-none {
         display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .d-1200-block {
+        display: block;
+    }
+
+    .d-1200-none {
+        display: none;
     }
 }

@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuBtn = document.querySelector(".header__menu-btn");
-    const mobileMenu = document.getElementById("header-menu");
+import initMobileMenu from "./Menu.js";
 
-    menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("active");
-    });
-});
+initMobileMenu();
