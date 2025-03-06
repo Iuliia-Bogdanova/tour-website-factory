@@ -1,34 +1,87 @@
 /* Bootstrap */
 
-/* .col-auto {
-    align-items: center;
-} */
-
 /* Bootstrap END*/
 
+/* Font Sizes */
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-28 {
+    font-size: 28px;
+}
+.fs-42 {
+    font-size: 42px;
+}
+
 /* Font Weights */
-.fw-light {
+.fw-300 {
     font-weight: 300;
 }
-
-.fw-regular {
+.fw-400 {
     font-weight: 400;
 }
-
-.fw-medium {
+.fw-500 {
     font-weight: 500;
 }
-
-.fw-semi-bold {
+.fw-600 {
     font-weight: 600;
 }
-
-.fw-bold {
+.fw-700 {
     font-weight: 700;
 }
-
-.fw-extra-bold {
+.fw-800 {
     font-weight: 800;
+}
+
+/* Line-height */
+.lh-14 {
+    line-height: 14px;
+}
+.lh-15 {
+    line-height: 15px;
+}
+.lh-18 {
+    line-height: 18px;
+}
+.lh-28 {
+    line-height: 28px;
+}
+.lh-31 {
+    line-height: 31px;
+}
+.lh-40 {
+    line-height: 40px;
+}
+
+/* Text Transform */
+.text-start {
+    text-align: left;
+}
+.tt-uppercase {
+    text-transform: uppercase;
+}
+.tt-lowercase {
+    text-transform: lowercase;
+}
+.tt-capitalize {
+    text-transform: capitalize;
+}
+
+/* Тext Decoration */
+.td-underline {
+    text-decoration: underline;
 }
 
 /* Ограничение container-fluid */
@@ -44,15 +97,57 @@
     padding-right: clamp(16px, 4vw, 40px);
 }
 
+/* Margins */
+.mb-12 {
+    margin-bottom: 12px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+/* Gaps */
+.g-20 {
+    gap: 20px;
+}
+.g-30 {
+    gap: 30px;
+}
+.g-50 {
+    gap: 50px;
+}
+
 /* Резиновый gap */
 .custom-gap {
     gap: clamp(8px, 2vw, 20px);
 }
 
-/* Переопределить размер */
-.header__logo img.img-size-200x53 {
-    width: 200px;
-    height: 53px;
+/* Background */
+.bg-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Rows - columns */
+.flex-1200 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 /* Breakpoints */
@@ -60,11 +155,17 @@
     .d-640-block {
         display: none;
     }
+    .d-640-none {
+        display: block;
+    }
 }
 
 @media (min-width: 640px) {
     .d-640-block {
         display: block;
+    }
+    .d-640-none {
+        display: none;
     }
 }
 
