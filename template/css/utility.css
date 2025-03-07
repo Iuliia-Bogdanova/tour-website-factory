@@ -32,6 +32,9 @@
 .fs-22 {
     font-size: 22px;
 }
+.fs-31 {
+    font-size: 31px;
+}
 .fs-42 {
     font-size: 42px;
 }
@@ -54,6 +57,12 @@
 .lh-18 {
     line-height: 18px;
 }
+.lh-25 {
+    line-height: 25px;
+}
+.lh-26 {
+    line-height: 26px;
+}
 .lh-28 {
     line-height: 28px;
 }
@@ -68,9 +77,9 @@
 .tt-uppercase {
     text-transform: uppercase;
 }
-/* .tt-lowercase {
+.tt-lowercase {
     text-transform: lowercase;
-} */
+}
 .tt-capitalize {
     text-transform: capitalize;
 }

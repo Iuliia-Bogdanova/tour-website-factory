@@ -17,3 +17,96 @@ button {
         display: none;
     }
 }
+
+/* .more-btn */
+.more-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(22, 36, 60, 0.5);
+}
+
+.left-top::before,
+.left-top::after,
+.right-top::before,
+.right-top::after,
+.right-bottom::before,
+.right-bottom::after,
+.left-bottom::before,
+.left-bottom::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: var(--info-decor);
+}
+
+.left-top::before {
+    width: 1px;
+    height: 22px;
+    top: 0;
+    left: 0;
+}
+
+.left-top::after {
+    width: 24px;
+    height: 1px;
+    top: 0;
+    left: 0;
+}
+
+.right-top::before {
+    width: 24px;
+    height: 1px;
+    top: 0;
+    right: 0;
+}
+
+.right-top::after {
+    width: 1px;
+    height: 22px;
+    top: 0;
+    right: 0;
+}
+
+.right-bottom::before {
+    width: 24px;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+}
+
+.right-bottom::after {
+    width: 1px;
+    height: 22px;
+    bottom: 0;
+    right: 0;
+}
+
+.left-bottom::before {
+    width: 24px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+
+.left-bottom::after {
+    width: 1px;
+    height: 22px;
+    bottom: 0;
+    left: 0;
+}
+
+@media (min-width: 640px) {
+    .intro__btn {
+        width: 50%;
+    }
+}
+
+@media (min-width: 640px) {
+    .intro__btn {
+        width: 30%;
+    }
+}
+/* .more-btn END */

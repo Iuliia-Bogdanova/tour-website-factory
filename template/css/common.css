@@ -180,6 +180,123 @@ a {
 }
 /* Header END */
 
+/* Wrappers */
+.intro__wrapper,
+.footer__wrapper {
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+/* Intro */
+.intro__bg {
+    background-image: url("/template/img/intro-bg.webp");
+}
+.slide-img {
+    width: 270px;
+    height: 270px;
+    background-image: url("/template/img/slide-img.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro__title,
+.intro__text {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+@media (min-width: 640px) {
+    .intro__bg {
+        margin-top: 70px;
+    }
+
+    .intro__wrapper {
+        gap: 70px;
+    }
+
+    .slide-img {
+        order: 1;
+        width: 373px;
+        height: 373px;
+        margin-top: 20%;
+        margin-left: 60%;
+    }
+
+    .intro__title {
+        order: 2;
+        margin-top: -500px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .intro__text {
+        order: 3;
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .intro__btn {
+        order: 4;
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro__bg {
+        background-position: 100% 100%;
+    }
+
+    .intro__wrapper {
+        padding-bottom: 100px;
+        gap: 100px;
+    }
+
+    .slide-img {
+        width: 580px;
+        height: 580px;
+        margin-top: 5%;
+        margin-left: 50%;
+    }
+
+    .intro__title {
+        margin-top: -600px;
+        font-size: 63px;
+        line-height: 63px;
+    }
+
+    .intro__text {
+        width: 50%;
+        font-size: 20px;
+        line-height: 31px;
+    }
+}
+/* Intro END*/
+
 /* Footer */
 .footer {
     position: relative;
@@ -188,11 +305,6 @@ a {
 
 .footer__bg {
     background-image: url(/template/img/footer-bg.webp);
-}
-
-.footer-wrapper {
-    flex-direction: column;
-    padding: 50px 0;
 }
 
 .footer__logo img {
@@ -227,12 +339,12 @@ a {
 }
 
 @media (min-width: 1200px) {
-    .footer__bg {
+    /* .footer__bg {
         top: -200px;
         height: calc(100% + 200px);
-    }
+    } */
 
-    .footer-wrapper {
+    .footer__wrapper {
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 17px;
