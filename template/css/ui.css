@@ -1,2 +1,19 @@
-@media (min-width: 640px) {
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.header__menu-btn img {
+    width: 37px;
+    height: 37px;
+}
+
+@media (min-width: 1200px) {
+    .header__menu-btn {
+        display: none;
+    }
 }

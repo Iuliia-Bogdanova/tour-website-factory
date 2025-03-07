@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,238 +50,183 @@
         <link rel="stylesheet" href="/template/css/common.css" />
         <!-- Styles END -->
     </head>
-    <body class="d-flex flex-column justify-content-between">
+    <body>
         <div id="overlay" class="overlay"></div>
         <!-- Header -->
         <header id="header" class="header">
-            <div class="header__bg">
-                <div class="container-fluid limited p-fluid">
-                    <div
-                        class="row align-items-center justify-content-between flex-nowrap"
+            <div class="custom-container">
+                <div
+                    class="header-wrapper d-flex flex-row justify-content-between align-items-center"
+                >
+                    <!-- Logo -->
+                    <a href="#" class="header__logo">
+                        <img src="/template/img/logo.png" alt="Логотип" />
+                    </a>
+                    <!-- Desktop nav -->
+                    <nav class="header__menu">
+                        <ul
+                            class="menu__list d-flex flex-row align-items-center fs-18 lh-28 tt-capitalize gap-26"
+                        >
+                            <li><a href="#">Туры</a></li>
+                            <li><a href="#">О Компании</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li>
+                                <a href="#footer">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Phone -->
+                    <a
+                        href="tel:+77761222211"
+                        class="header__phone fw-700 fs-20 lh-31"
+                        >+7 (776) 122 2211</a
                     >
-                        <!-- Logo -->
-                        <div class="col-auto">
-                            <a href="#" class="header__logo">
+                    <!-- Socials -->
+                    <ul
+                        class="header__socials d-flex flex-row justify-content-between align-items-center gap-12"
+                    >
+                        <li>
+                            <a
+                                href="https://www.youtube.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                ><img
+                                    class="social-icon"
+                                    src="/template/svg/youtube.svg"
+                                    alt="YouTube"
+                            /></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://rutube.ru/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                ><img
+                                    class="social-icon"
+                                    src="/template/svg/rutube.svg"
+                                    alt="RuTube"
+                            /></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.whatsapp.com/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                ><img
+                                    class="social-icon whatsapp-icon"
+                                    src="/template/svg/whatsapp.svg"
+                                    alt="WhatsApp"
+                            /></a>
+                        </li>
+                    </ul>
+                    <!-- Mobile nav btn -->
+                    <button class="header__menu-btn" aria-label="Открыть меню">
+                        <img src="/template/svg/menu-dots.svg" alt="Меню" />
+                    </button>
+                    <!-- Mobile nav -->
+                    <nav id="menu-mobile" class="header__menu--mobile">
+                        <div
+                            class="header__menu-top d-flex flex-column justify-content-between gap-26"
+                        >
+                            <a href="#header" class="header__logo--mobile">
                                 <img
-                                    src="/template/img/logo.webp"
+                                    src="/template/img/logo.png"
                                     alt="Логотип"
                                 />
                             </a>
-                        </div>
-                        <!-- Desktop nav -->
-                        <nav class="col-auto d-1200-block">
+                            <span class="header__menu-close fs-42 fw-300"
+                                >&times;</span
+                            >
                             <ul
-                                class="header__menu d-flex flex-row align-items-center custom-gap fs-18 lh-28 tt-capitalize"
+                                class="d-flex flex-column justify-content-between fs-20 fw-300 tt-capitalize gap-16"
                             >
                                 <li><a href="#">Туры</a></li>
                                 <li><a href="#">О Компании</a></li>
                                 <li><a href="#">Отзывы</a></li>
-                                <li>
-                                    <a href="#footer">Контакты</a>
-                                </li>
+                                <li><a href="#footer">Контакты</a></li>
                             </ul>
-                        </nav>
-                        <!-- Phone -->
-                        <div class="col-auto d-640-block">
+                        </div>
+                        <div
+                            class="header__menu-bottom d-flex flex-column justify-content-between gap-26"
+                        >
                             <a
                                 href="tel:+77761222211"
-                                class="header__phone fw-700 fs-20 lh-31"
-                                >+7 (776) 122 2211</a
+                                class="header__phone d-flex fs-22 fw-700 lh-34"
                             >
-                        </div>
-                        <!-- Socials -->
-                        <div class="col-auto">
-                            <ul
-                                class="header__socials d-flex flex-row align-items-center custom-gap"
-                            >
-                                <li>
+                                +7 (776) 122 2211
+                            </a>
+                            <ul>
+                                <li class="header__socials">
                                     <a
-                                        href="https://www.youtube.com"
-                                        class="social-link"
+                                        class="me-2"
+                                        href="https://telegram.org/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        ><img
-                                            class="social-icon"
-                                            src="/template/svg/youtube.svg"
-                                            alt="YouTube"
-                                    /></a>
-                                </li>
-                                <li>
+                                    >
+                                        <img
+                                            src="/template/svg/tg-white.svg"
+                                            alt="Telegram"
+                                        />
+                                    </a>
                                     <a
-                                        href="https://rutube.ru/"
-                                        class="social-link"
+                                        href="https://www.whatsapp.com"
                                         target="_blank"
-                                        rel="noopener noreferrer"
-                                        ><img
-                                            class="social-icon"
-                                            src="/template/svg/rutube.svg"
-                                            alt="RuTube"
-                                    /></a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="https://www.whatsapp.com/"
-                                        class="social-link"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        ><img
-                                            class="social-icon whatsapp-icon"
-                                            src="/template/svg/whatsapp.svg"
+                                    >
+                                        <img
+                                            src="/template/svg/whatsapp-white.svg"
                                             alt="WhatsApp"
-                                    /></a>
+                                        />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
-                        <!-- Mobile nav btn -->
-                        <div class="col-auto d-1200-none">
-                            <button
-                                class="header__menu-btn"
-                                aria-label="Открыть меню"
-                            >
-                                <img
-                                    src="/template/svg/menu-dots.svg"
-                                    alt="Меню"
-                                />
-                            </button>
-                        </div>
-                        <!-- Mobile nav -->
-                        <nav
-                            id="header-menu"
-                            class="header__menu header__menu--mobile"
-                        >
-                            <div class="header__menu-top">
-                                <a href="#" class="header__logo">
-                                    <img
-                                        class="img-size-200x53 mb-4"
-                                        src="/template/img/logo.webp"
-                                        alt="Логотип"
-                                    />
-                                </a>
-                                <span class="header__menu-close fs-42 fw-300"
-                                    >&times;</span
-                                >
-                                <ul class="fw-300 fs-18 tt-capitalize">
-                                    <li class="mb-2"><a href="#">Туры</a></li>
-                                    <li class="mb-2">
-                                        <a href="#">О Компании</a>
-                                    </li>
-                                    <li class="mb-2"><a href="#">Отзывы</a></li>
-                                    <li><a href="#footer">Контакты</a></li>
-                                </ul>
-                            </div>
-                            <div class="header__menu-bottom">
-                                <ul>
-                                    <li class="mb-4">
-                                        <a
-                                            href="tel:+77761222211"
-                                            class="header__phone fw-700 fs-22"
-                                        >
-                                            +7 (776) 122 2211
-                                        </a>
-                                    </li>
-                                    <li class="header__socials">
-                                        <a
-                                            class="me-2"
-                                            href="https://telegram.org/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            <img
-                                                src="/template/svg/tg-white.svg"
-                                                alt="Telegram"
-                                            />
-                                        </a>
-                                        <a
-                                            href="https://www.whatsapp.com"
-                                            target="_blank"
-                                        >
-                                            <img
-                                                src="/template/svg/whatsapp-white.svg"
-                                                alt="WhatsApp"
-                                            />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </header>
+        <!-- Header END-->
+
+        <!-- Main -->
+        <main class="main"></main>
+        <!-- Main END-->
 
         <!-- Footer -->
         <footer id="footer" class="footer">
             <div class="footer__bg bg-cover"></div>
-            <div class="container-fluid limited p-fluid py-5">
-                <div class="row flex-1200 justify-content-between">
-                    <!-- Logo -->
-                    <div class="col-auto mb-30">
-                        <a href="#header" class="footer__logo">
-                            <img
-                                src="/template/img/logo-white.webp"
-                                alt="Логотип"
-                            />
-                        </a>
-                    </div>
-                    <!-- info links -->
-                    <div
-                        class="col d-flex mb-30 fs-15 fw-500 lh-15 tt-uppercase"
-                    >
-                        <a href="#" class="col-6">О КОМПАНИИ</a>
-                        <a href="#" class="col-6">ТУРЫ НА БАЙКОНУР</a>
-                    </div>
-                    <!-- Contacts + Socials-360-1200 -->
-                    <div
-                        class="col d-flex mb-12 fs-15 fw-500 lh-15 tt-uppercase"
-                    >
-                        <div class="col-6">
-                            КОНТАКТЫ<br /><a
-                                href="tel:+77761222211"
-                                class="footer__phone lh-40"
-                            >
-                                +7 (776) 122 2211
-                            </a>
-                        </div>
-                        <div class="col-6 d-640-block d-1200-block custom-gap">
-                            <div class="footer__socials">
-                                <a
-                                    class="me-2"
-                                    href="https://telegram.org/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <img
-                                        src="/template/svg/tg-white.svg"
-                                        alt="Telegram"
-                                    />
-                                </a>
-                                <a
-                                    href="https://www.whatsapp.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <img
-                                        src="/template/img/instagram_1.png"
-                                        alt="Instagram"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="custom-container">
                 <div
-                    class="row flex-1200 flex-1200-column justify-content-between"
+                    class="footer-wrapper d-flex justify-content-between gap-26 fs-15"
                 >
-                    <!-- Address -->
-                    <div class="col d-flex mb-16 fs-15 lh-18 right-1200">
-                        <div class="col-12">
+                    <!-- Logo -->
+                    <a href="#header" class="footer__logo">
+                        <img
+                            src="/template/img/logo-white.webp"
+                            alt="Логотип"
+                        />
+                    </a>
+                    <!-- Info links -->
+                    <div
+                        class="footer__links d-flex flex-row gap-26 fw-500 lh-15 tt-uppercase"
+                    >
+                        <a href="#" class="">О КОМПАНИИ</a>
+                        <a href="#" class="">ТУРЫ НА БАЙКОНУР</a>
+                    </div>
+                    <!-- Contacts -->
+                    <div
+                        class="footer__contacts d-flex flex-column justify-content-between gap-16"
+                    >
+                        <p class="fw-500 lh-15 tt-uppercase">КОНТАКТЫ</p>
+                        <a
+                            href="tel:+77761222211"
+                            class="fs-15 fw-500 lh-15 tt-uppercase"
+                        >
+                            +7 (776) 122 2211
+                        </a>
+                        <p class="lh-18">
                             Адрес: 468320, г.Байконур, ул. Мира 11Б,<br />ООО
                             «Алекс сервис»
-                        </div>
-                    </div>
-                    <!-- Mail -->
-                    <div class="col d-flex mb-40 fs-15 lh-15 right-1200">
-                        <div class="col-12">
+                        </p>
+                        <div class="lh-15">
                             <span class="fw-700">e-mail:</span>
                             <a
                                 href="mailto:alextour_baikonur@mail.ru"
@@ -293,47 +238,43 @@
                             </a>
                         </div>
                     </div>
-                    <!-- Socials-640 -->
-                    <div class="col d-640-block d-1200-none mb-30 custom-gap">
-                        <div class="footer__socials">
-                            <a
-                                class="me-2"
-                                href="https://telegram.org/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img
-                                    src="/template/svg/tg-white.svg"
-                                    alt="Telegram"
-                                />
-                            </a>
-                            <a
-                                href="https://www.whatsapp.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img
-                                    src="/template/img/instagram_1.png"
-                                    alt="Instagram"
-                                />
-                            </a>
-                        </div>
+                    <!-- Socials -->
+                    <div class="footer__socials d-flex gap-12">
+                        <a
+                            href="https://telegram.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="/template/svg/tg-white.svg"
+                                alt="Telegram"
+                            />
+                        </a>
+                        <a
+                            href="https://www.whatsapp.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="/template/img/instagram.png"
+                                alt="Instagram"
+                            />
+                        </a>
                     </div>
                     <!-- Website development -->
-                    <div class="col d-flex mb-30 fs-14 fw-500 lh-14">
-                        <div class="col-12 webdev">
-                            Разработка сайта —
-                            <a
-                                href="https://tursite.org/"
-                                class="email-link td-underline"
-                            >
-                                Фабрика турсайтов
-                            </a>
-                        </div>
+                    <div class="webdev fw-500 lh-15">
+                        Разработка сайта —
+                        <a
+                            href="https://tursite.org/"
+                            class="email-link td-underline"
+                        >
+                            Фабрика турсайтов
+                        </a>
                     </div>
                 </div>
             </div>
         </footer>
+        <!-- Footer END -->
 
         <script type="module" src="/template/js/main.js"></script>
     </body>

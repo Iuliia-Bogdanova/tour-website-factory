@@ -2,12 +2,26 @@
 
 /* Bootstrap END*/
 
-/* Font Sizes */
-.fs-14 {
-    font-size: 14px;
+/* Gaps */
+/* .gap-10 {
+    gap: 10px;
+} */
+.gap-12 {
+    gap: 12px;
 }
+.gap-16 {
+    gap: 16px;
+}
+.gap-26 {
+    gap: 26px;
+}
+
+/* Font Sizes */
 .fs-15 {
     font-size: 15px;
+}
+.fs-17 {
+    font-size: 17px;
 }
 .fs-18 {
     font-size: 18px;
@@ -18,9 +32,6 @@
 .fs-22 {
     font-size: 22px;
 }
-.fs-28 {
-    font-size: 28px;
-}
 .fs-42 {
     font-size: 42px;
 }
@@ -29,26 +40,14 @@
 .fw-300 {
     font-weight: 300;
 }
-.fw-400 {
-    font-weight: 400;
-}
 .fw-500 {
     font-weight: 500;
-}
-.fw-600 {
-    font-weight: 600;
 }
 .fw-700 {
     font-weight: 700;
 }
-.fw-800 {
-    font-weight: 800;
-}
 
 /* Line-height */
-.lh-14 {
-    line-height: 14px;
-}
 .lh-15 {
     line-height: 15px;
 }
@@ -61,76 +60,25 @@
 .lh-31 {
     line-height: 31px;
 }
-.lh-40 {
-    line-height: 40px;
+.lh-34 {
+    line-height: 34px;
 }
 
 /* Text Transform */
-.text-start {
-    text-align: left;
-}
 .tt-uppercase {
     text-transform: uppercase;
 }
-.tt-lowercase {
+/* .tt-lowercase {
     text-transform: lowercase;
-}
+} */
 .tt-capitalize {
     text-transform: capitalize;
 }
-
-/* Тext Decoration */
 .td-underline {
     text-decoration: underline;
 }
 
-/* Ограничение container-fluid */
-.container-fluid.limited {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Резиновый padding */
-.p-fluid {
-    padding-left: clamp(16px, 4vw, 40px);
-    padding-right: clamp(16px, 4vw, 40px);
-}
-
-/* Margins */
-.mb-12 {
-    margin-bottom: 12px;
-}
-.mb-16 {
-    margin-bottom: 16px;
-}
-.mb-20 {
-    margin-bottom: 20px;
-}
-.mb-30 {
-    margin-bottom: 30px;
-}
-.mb-40 {
-    margin-bottom: 40px;
-}
-
-/* Gaps */
-.g-20 {
-    gap: 20px;
-}
-.g-30 {
-    gap: 30px;
-}
-.g-50 {
-    gap: 50px;
-}
-
-/* Резиновый gap */
-.custom-gap {
-    gap: clamp(8px, 2vw, 20px);
-}
-
-/* Background */
+/* Background-images */
 .bg-cover {
     position: absolute;
     top: 0;
@@ -143,48 +91,8 @@
     z-index: -1;
 }
 
-/* Rows - columns */
-.flex-1200 {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-/* Breakpoints */
-@media (width < 640px) {
-    .d-640-block {
-        display: none;
+/* @media (min-width: 1200px) {
+    .flex-row-1200 {
+        flex-direction: row;
     }
-    .d-640-none {
-        display: block;
-    }
-}
-
-@media (min-width: 640px) {
-    .d-640-block {
-        display: block;
-    }
-    .d-640-none {
-        display: none;
-    }
-}
-
-@media (width < 1200px) {
-    .d-1200-block {
-        display: none;
-    }
-
-    .d-1200-none {
-        display: block;
-    }
-}
-
-@media (min-width: 1200px) {
-    .d-1200-block {
-        display: block;
-    }
-
-    .d-1200-none {
-        display: none;
-    }
-}
+} */
