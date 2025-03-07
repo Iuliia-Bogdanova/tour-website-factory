@@ -191,6 +191,7 @@ a {
 /* Intro */
 .intro__bg {
     background-image: url("/template/img/intro-bg.webp");
+    /* background-position: 30% 0; */
 }
 .slide-img {
     width: 270px;
