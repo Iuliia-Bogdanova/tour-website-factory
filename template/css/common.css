@@ -185,6 +185,7 @@ a {
 .footer__wrapper {
     flex-direction: column;
     padding: 50px 0;
+    /* overflow: hidden; */
 }
 
 /* Intro */
@@ -245,7 +246,7 @@ a {
         width: 373px;
         height: 373px;
         margin-top: 20%;
-        margin-left: 60%;
+        margin-left: 40%;
     }
 
     .intro__title {

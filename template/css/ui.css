@@ -104,7 +104,7 @@ button {
     }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1200px) {
     .intro__btn {
         width: 30%;
     }
