@@ -15,9 +15,12 @@
 .gap-26 {
     gap: 26px;
 }
-.gap-40 {
-    gap: 40px;
+.gap-30 {
+    gap: 30px;
 }
+/* .gap-40 {
+    gap: 40px;
+} */
 
 /* Font Sizes */
 .fs-15 {
@@ -35,9 +38,12 @@
 .fs-22 {
     font-size: 22px;
 }
-.fs-31 {
-    font-size: 31px;
+.fs-28 {
+    font-size: 28px;
 }
+/* .fs-31 {
+    font-size: 31px;
+} */
 .fs-42 {
     font-size: 42px;
 }
@@ -63,9 +69,9 @@
 .lh-25 {
     line-height: 25px;
 }
-.lh-26 {
+/* .lh-26 {
     line-height: 26px;
-}
+} */
 .lh-28 {
     line-height: 28px;
 }
@@ -92,9 +98,9 @@
 
 /* Background-images */
 .bg-cover {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     height: 100%;
     background-size: cover;
