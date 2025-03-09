@@ -12,15 +12,21 @@
 .gap-16 {
     gap: 16px;
 }
+.gap-20 {
+    gap: 20px;
+}
+.col-gap-20 {
+    column-gap: 20px;
+}
 .gap-26 {
     gap: 26px;
 }
 .gap-30 {
     gap: 30px;
 }
-/* .gap-40 {
+.gap-40 {
     gap: 40px;
-} */
+}
 
 /* Font Sizes */
 .fs-15 {
@@ -38,14 +44,23 @@
 .fs-22 {
     font-size: 22px;
 }
+.fs-24 {
+    font-size: 24px;
+}
 .fs-28 {
     font-size: 28px;
 }
 /* .fs-31 {
     font-size: 31px;
 } */
+.fs-38 {
+    font-size: 38px;
+}
 .fs-42 {
     font-size: 42px;
+}
+.fs-180 {
+    font-size: 180px;
 }
 
 /* Font Weights */
@@ -58,6 +73,9 @@
 .fw-700 {
     font-weight: 700;
 }
+/* .fw-800 {
+    font-weight: 800;
+} */
 
 /* Line-height */
 .lh-15 {
@@ -81,6 +99,9 @@
 .lh-34 {
     line-height: 34px;
 }
+.lh-60 {
+    line-height: 60px;
+}
 
 /* Text Transform */
 .tt-uppercase {
@@ -96,7 +117,7 @@
     text-decoration: underline;
 }
 
-/* Background-images */
+/* Images */
 .bg-cover {
     /* position: absolute;
     top: 0;
@@ -104,9 +125,28 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
-    z-index: -1;
+    /* z-index: -1; */
+    overflow-x: hidden;
+}
+
+.img {
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-number-gradient {
+    background: linear-gradient(
+        0turn,
+        rgba(0, 0, 0, 0.75) 28%,
+        rgba(115, 115, 115, 1) 64%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 /* @media (min-width: 1200px) {
