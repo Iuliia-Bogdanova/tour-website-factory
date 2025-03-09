@@ -32,6 +32,19 @@
     animation: pulse 4s infinite ease-in-out;
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.about-icon.icon-1 {
+    animation: spin 8s linear infinite;
+}
+
 @media (min-width: 640px) {
     @keyframes float {
         0% {
@@ -48,17 +61,8 @@
     .slide-img {
         animation: float 4s infinite ease-in-out;
     }
-}
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
+    .about-icon.icon-1 {
+        animation: none;
     }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.about-icon.icon-1 {
-    animation: spin 8s linear infinite;
 }

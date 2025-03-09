@@ -114,6 +114,16 @@ a {
     .custom-container {
         max-width: 640px;
     }
+
+    .section__title {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .section-number {
+        /* top: 100px; */
+        font-size: 280px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -195,6 +205,13 @@ a {
     padding: 50px 0;
 }
 
+@media (min-width: 640px) {
+    .intro__wrapper,
+    .about__wrapper {
+        gap: 70px;
+    }
+}
+
 /* Intro */
 .intro__bg {
     background-image: url("/template/img/intro-bg.webp");
@@ -222,10 +239,6 @@ a {
 }
 
 @media (min-width: 640px) {
-    .intro__wrapper {
-        gap: 70px;
-    }
-
     .slide-img {
         order: 1;
         width: 373px;
@@ -301,7 +314,13 @@ a {
     background-image: url("/template/img/01-bg.webp");
     background-position: center;
     background-size: cover;
+    transform: rotate(-45deg);
     z-index: -1;
+}
+
+.about__items {
+    display: flex;
+    flex-direction: column;
 }
 
 .about__img {
@@ -327,20 +346,103 @@ a {
 .about-icon.icon-1 {
     background-image: url("/template/img/icon-1.png");
     margin-top: 110px;
-    /* animation: spin 8s linear infinite; */
 }
-
-/* @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-} */
 
 .about-icon.icon-2 {
     display: none;
+}
+
+@media (min-width: 640px) {
+    .about__wrapper {
+        padding-top: 150px;
+    }
+
+    .about::before {
+        top: 35%;
+        right: 50%;
+        width: 508px;
+        height: 504px;
+    }
+
+    .about__items {
+        gap: 50px;
+    }
+
+    .about__img {
+        width: 320px;
+        height: 460px;
+        margin-left: auto;
+        background-image: url("/template/img/01-rocket-vertical.webp");
+    }
+
+    .about__text {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .about__date {
+        padding-top: 30px;
+        column-gap: 10px;
+    }
+
+    .about-icon.icon-1 {
+        margin-top: 0;
+    }
+
+    .about-icon.icon-2 {
+        display: block;
+        background-image: url("/template/img/icon-2.png");
+    }
+
+    .about-icon.icon-3 {
+        display: block;
+        background-image: url("/template/img/icon-3.png");
+    }
+}
+
+@media (min-width: 1200px) {
+    /* .about__wrapper {
+        padding-top: 200px;
+    } */
+
+    .about::before {
+        /* top: 35%; */
+        /* right: 50%; */
+        width: 933px;
+        height: 925px;
+    }
+
+    .about::after {
+        position: absolute;
+        content: "";
+        width: 263px;
+        height: 261px;
+        top: 23%;
+        right: 2%;
+        background-image: url("/template/img/01-planet-desktop.webp");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .about__items {
+        flex-direction: row;
+        justify-content: end;
+        padding-bottom: 100px;
+    }
+
+    .about__img {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .about__text {
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .about__date {
+        padding: 65px 30px;
+    }
 }
 
 /* About END*/
