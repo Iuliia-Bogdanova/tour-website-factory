@@ -656,7 +656,7 @@ a {
 
 @media (min-width: 640px) {
     .why-us__wrapper {
-        padding-bottom: 100px;
+        padding: 100px 0;
     }
     .why-us::before {
         width: 880px;
