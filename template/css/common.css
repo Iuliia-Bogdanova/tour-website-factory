@@ -810,6 +810,69 @@ a {
 }
 /* History End*/
 
+/* Space-img block */
+.space__bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.space__bg::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 48px;
+    top: 45%;
+    left: 75%;
+    transform: translateX(-50%);
+    background-image: url("/template/img/spice-rocket.webp");
+    background-position: center;
+    background-size: cover;
+    rotate: 50deg;
+    z-index: 1;
+}
+
+.space__img {
+    width: 543px;
+    height: 374px;
+    object-fit: cover;
+}
+
+@media (min-width: 640px) {
+    .space__img {
+        width: 640px;
+        height: 441px;
+    }
+
+    .space__bg::after {
+        width: 33px;
+        height: 158px;
+        top: 35%;
+        left: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .space__img {
+        width: 1299px;
+        height: 895px;
+    }
+
+    .space__bg::after {
+        width: 68px;
+        height: 326px;
+        top: 35%;
+        left: 50%;
+    }
+}
+/* Space-img block END*/
+
 /* Footer */
 .footer {
     position: relative;
