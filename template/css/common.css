@@ -98,6 +98,11 @@ a {
     color: inherit;
 }
 
+/* Container, section-, block- */
+/* h1 - intro__title
+    h2 - section__title
+    h3 - block__title */
+
 .custom-container {
     max-width: 360px;
     padding: 0 15px;
@@ -106,7 +111,7 @@ a {
 
 .section-number {
     position: relative;
-    top: 50px;
+    top: 40px;
     z-index: -1;
 }
 
@@ -122,6 +127,10 @@ a {
 
     .section-number {
         font-size: 280px;
+    }
+
+    .block__title {
+        font-size: 38px;
     }
 }
 
@@ -201,6 +210,7 @@ a {
 .about__wrapper,
 .sights__wrapper,
 .why-us__wrapper,
+.history__wrapper,
 .footer__wrapper {
     flex-direction: column;
     padding: 50px 0;
@@ -664,9 +674,6 @@ a {
         top: 0;
         right: 75%;
     }
-    .why-us__title {
-        font-size: 38px;
-    }
     .feature__item {
         font-size: 18px;
         height: 300px;
@@ -677,12 +684,12 @@ a {
     }
 
     @media (min-width: 1200px) {
-        /* .why-us::before {
+        .why-us::before {
             width: 1530px;
             height: 1518px;
             top: 0;
             right: 75%;
-        } */
+        }
         .why-us__wrapper {
             display: flex;
             width: 80%;
@@ -698,6 +705,110 @@ a {
     }
 }
 /* WhyUs End*/
+
+/* History*/
+.history {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+
+.history::before {
+    position: absolute;
+    content: "";
+    width: 298px;
+    height: 300px;
+    top: 30%;
+    left: 6%;
+    background-image: url("/template/img/history-bg.webp");
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.history::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    top: 30%;
+    right: 0;
+    background-image: url("/template/img/history-01.png");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.history__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.history__wrapper::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: 60%;
+    left: 77%;
+    background-image: url("/template/img/history-02.png");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+@media (min-width: 640px) {
+    .history {
+        max-width: 1200px;
+    }
+
+    .history::before,
+    .history::after,
+    .history__wrapper::before {
+        display: none;
+    }
+
+    .history__text {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .history__btn {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .history__description {
+        width: 50%;
+    }
+
+    .history::before {
+        display: block;
+        width: 448px;
+        height: 452px;
+        left: 58%;
+    }
+
+    .history::after {
+        display: block;
+        width: 120px;
+        height: 120px;
+    }
+
+    .history__wrapper::before {
+        display: block;
+        width: 51px;
+        height: 50px;
+        /* top: 60%; */
+        left: 55%;
+    }
+}
+/* History End*/
 
 /* Footer */
 .footer {

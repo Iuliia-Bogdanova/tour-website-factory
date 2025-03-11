@@ -7,6 +7,7 @@ button {
     cursor: pointer;
 }
 
+/* Menu-btn */
 .header__menu-btn img {
     width: 37px;
     height: 37px;
@@ -17,8 +18,9 @@ button {
         display: none;
     }
 }
+/* Menu-btn END*/
 
-/* .more-btn */
+/* Link-btn */
 .more-btn {
     position: relative;
     display: flex;
@@ -109,4 +111,4 @@ button {
         width: 30%;
     }
 }
-/* .more-btn END */
+/* Link-btn END */

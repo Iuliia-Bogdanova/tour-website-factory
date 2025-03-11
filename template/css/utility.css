@@ -27,6 +27,9 @@
 .gap-40 {
     gap: 40px;
 }
+.gap-50 {
+    gap: 50px;
+}
 
 /* Font Sizes */
 .fs-14 {
@@ -65,6 +68,9 @@
 .fs-180 {
     font-size: 180px;
 }
+/* .fs-200 {
+    font-size: 200px;
+} */
 
 /* Font Weights */
 .fw-300 {
@@ -93,9 +99,9 @@
 .lh-25 {
     line-height: 25px;
 }
-/* .lh-26 {
+.lh-26 {
     line-height: 26px;
-} */
+}
 .lh-28 {
     line-height: 28px;
 }
@@ -108,6 +114,9 @@
 .lh-60 {
     line-height: 60px;
 }
+/* .lh-200 {
+    line-height: 200px;
+} */
 
 /* Text Transform */
 .tt-uppercase {
