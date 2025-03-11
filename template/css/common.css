@@ -138,6 +138,9 @@ a {
     .custom-container {
         max-width: 1200px;
     }
+    .block__title {
+        font-size: 42px;
+    }
 }
 
 /* Header */
@@ -212,6 +215,7 @@ a {
 .why-us__wrapper,
 .history__wrapper,
 .start__wrapper,
+.reviews__wrapper,
 .footer__wrapper {
     flex-direction: column;
     padding: 50px 0;
@@ -1045,8 +1049,71 @@ a {
         width: 370px;
     }
 }
-
 /* 05-Space start END*/
+
+/* Reviews */
+.review__text {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--bg-secondary);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 12px solid var(--bg-secondary);
+    border-left: 12px solid var(--bg-secondary);
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    margin-top: -16px;
+    margin-left: 30px;
+}
+
+.review__author {
+    margin-top: -10px;
+}
+
+.author__photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.photo-olga {
+    background-image: url("/template/img/olga.webp");
+}
+
+.photo-ivan {
+    background-image: url("/template/img/ivan.webp");
+}
+
+.photo-maria {
+    background-image: url("/template/img/maria.webp");
+}
+
+.photo-dmitry {
+    background-image: url("/template/img/dmitry.webp");
+}
+
+@media (min-width: 640px) {
+    .author__name {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .review__card {
+        width: 45%;
+    }
+
+    .author__name {
+        font-size: 15px;
+    }
+}
+
+/* Reviews END*/
 
 /* Footer */
 .footer {
