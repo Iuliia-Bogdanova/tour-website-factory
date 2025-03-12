@@ -1263,7 +1263,8 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("/template/img/footer-bg.webp");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 70%, #000),
+        url("/template/img/footer-bg.webp");
     background-position: center;
     z-index: -1;
 }
@@ -1296,8 +1297,8 @@ a {
 
 @media (min-width: 1200px) {
     .footer__bg {
-        top: -200px;
-        height: calc(100% + 200px);
+        top: -350px;
+        height: calc(100% + 350px);
     }
 
     .footer__wrapper {
