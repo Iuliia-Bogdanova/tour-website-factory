@@ -238,7 +238,8 @@ a {
 
 /* Intro */
 .intro__bg {
-    background-image: url("/template/img/intro-bg.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #000),
+        url("/template/img/intro-bg.webp");
     background-position: 30% 100%;
     /* overflow-x: hidden; */
 }
@@ -291,7 +292,7 @@ a {
 
 @media (min-width: 1200px) {
     .intro__bg {
-        background-position: 100% 100%;
+        background-position: 100% 70%;
     }
 
     .intro__wrapper {
