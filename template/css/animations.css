@@ -78,6 +78,9 @@
 .about::before,
 .about::after,
 .why-us::before,
+.history::before,
+.history::after,
+.history__wrapper::before,
 .start::before,
 .start::after {
     transform: translateY(0);
@@ -105,9 +108,25 @@
     transform: translateY(100px);
 }
 
+.history.scrolling-down::before,
+.history.scrolling-down::after {
+    transform: translateY(-150px);
+}
+.history.scrolling-up::before,
+.history.scrolling-up::after {
+    transform: translateY(100px);
+}
+
+.history__wrapper.scrolling-down::before {
+    transform: translateY(150px);
+}
+.history__wrapper.scrolling-down::before {
+    transform: translateY(-150px);
+}
+
 .start.scrolling-down::before,
 .start.scrolling-down::after {
-    transform: translateY(-150px);
+    transform: translateY(-100px);
 }
 .start.scrolling-up::before,
 .start.scrolling-up::after {
