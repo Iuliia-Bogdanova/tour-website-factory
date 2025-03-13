@@ -1,4 +1,4 @@
-/* Intro */
+/* Intro animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -77,7 +77,9 @@
 /* Planets animation */
 .about::before,
 .about::after,
-.why-us::before {
+.why-us::before,
+.start::before,
+.start::after {
     transform: translateY(0);
     transition: transform 2s ease-out;
 }
@@ -100,5 +102,14 @@
     transform: translateY(-100px);
 }
 .why-us.scrolling-up::before {
+    transform: translateY(100px);
+}
+
+.start.scrolling-down::before,
+.start.scrolling-down::after {
+    transform: translateY(-150px);
+}
+.start.scrolling-up::before,
+.start.scrolling-up::after {
     transform: translateY(100px);
 }
