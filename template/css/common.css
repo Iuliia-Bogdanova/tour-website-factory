@@ -104,7 +104,6 @@ a {
 /* h1 - intro__title
     h2 - section__title
     h3 - block__title */
-
 .custom-container {
     max-width: 360px;
     padding: 0 15px;
@@ -340,8 +339,12 @@ a {
     background-image: url("/template/img/01-bg.webp");
     background-position: center;
     background-size: cover;
-    transform: rotate(-45deg);
+    /* rotate: -45deg; */
     z-index: -1;
+
+    /* transform: rotate(45deg) translateY(0); */
+    /* transform: translateY(0);
+    transition: transform 2s ease-out; */
 }
 
 .about__items {
@@ -388,6 +391,16 @@ a {
         right: 50%;
         width: 508px;
         height: 504px;
+    }
+
+    .about.scrolling-down::before {
+        /* transform: translateY(-300px); */
+        /* transform: rotate(45deg) translateY(-300px); */
+    }
+
+    .about.scrolling-up::before {
+        /* transform: translateY(100px); */
+        /* transform: rotate(45deg) translateY(200px); */
     }
 
     .about__items {
@@ -442,6 +455,7 @@ a {
         background-image: url("/template/img/01-planet-desktop.webp");
         background-position: center;
         background-size: cover;
+        z-index: -1;
     }
 
     .about__items {
@@ -469,7 +483,8 @@ a {
 /* 03-Sights */
 .sights__bg {
     position: relative;
-    background-image: url("/template/img/03-bg.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #000),
+        url("/template/img/03-bg.webp");
     background-position: 50% 40%;
     z-index: -10;
 }
@@ -683,7 +698,7 @@ a {
     .why-us::before {
         width: 880px;
         height: 873px;
-        top: 0;
+        top: 10%;
         right: 75%;
     }
 
@@ -696,26 +711,26 @@ a {
         width: 160px;
         height: 160px;
     }
+}
 
-    @media (min-width: 1200px) {
-        .why-us::before {
-            width: 1530px;
-            height: 1518px;
-            top: 0;
-            right: 75%;
-        }
-        .why-us__wrapper {
-            display: flex;
-            width: 80%;
-            justify-content: flex-start;
-            align-items: start;
-            margin-left: auto;
-        }
+@media (min-width: 1200px) {
+    .why-us::before {
+        width: 1530px;
+        height: 1518px;
+        top: 0;
+        right: 75%;
+    }
+    .why-us__wrapper {
+        display: flex;
+        width: 80%;
+        justify-content: flex-start;
+        align-items: start;
+        margin-left: auto;
+    }
 
-        .why-us__features {
-            justify-content: flex-start;
-            align-items: start;
-        }
+    .why-us__features {
+        justify-content: flex-start;
+        align-items: start;
     }
 }
 /* WhyUs End*/

@@ -71,12 +71,34 @@
 /* Space-img block */
 .space__img,
 .space__bg::after {
-    /* transition: transform 0.1s linear; */
     transition: width 0.2s linear, height 0.2s linear;
 }
-/* @media (min-width: 1200px) {
-    .space__img,
-    .space__bg::after {
-        transition: transform 0.1s linear;
-    }
-} */
+
+/* Planets animation */
+.about::before,
+.about::after,
+.why-us::before {
+    transform: translateY(0);
+    transition: transform 2s ease-out;
+}
+
+.about.scrolling-down::before {
+    transform: translateY(-300px);
+}
+.about.scrolling-up::before {
+    transform: translateY(10px);
+}
+
+.about.scrolling-down::after {
+    transform: translateY(200px);
+}
+.about.scrolling-up::after {
+    transform: translateY(-200px);
+}
+
+.why-us.scrolling-down::before {
+    transform: translateY(-100px);
+}
+.why-us.scrolling-up::before {
+    transform: translateY(100px);
+}
