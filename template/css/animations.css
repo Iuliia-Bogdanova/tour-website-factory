@@ -68,13 +68,13 @@
     }
 }
 
-/* Space-img block */
+/* Space-img animation + js */
 .space__img,
 .space__bg::after {
     transition: width 0.2s linear, height 0.2s linear;
 }
 
-/* Planets animation */
+/* Planets animation + js */
 .about::before,
 .about::after,
 .why-us::before,
@@ -110,18 +110,18 @@
 
 .history.scrolling-down::before,
 .history.scrolling-down::after {
-    transform: translateY(-150px);
+    transform: translateY(100px);
 }
 .history.scrolling-up::before,
 .history.scrolling-up::after {
-    transform: translateY(100px);
+    transform: translateY(-100px);
 }
 
 .history__wrapper.scrolling-down::before {
-    transform: translateY(150px);
+    transform: translateY(-150px);
 }
 .history__wrapper.scrolling-down::before {
-    transform: translateY(-150px);
+    transform: translateY(150px);
 }
 
 .start.scrolling-down::before,

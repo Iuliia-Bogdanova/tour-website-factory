@@ -231,6 +231,7 @@ a {
     }
 
     .why-us__wrapper,
+    .history__wrapper,
     .start__wrapper {
         padding: 70px 0;
     }
@@ -823,7 +824,7 @@ a {
         display: block;
         width: 51px;
         height: 50px;
-        /* top: 60%; */
+        top: 50%;
         left: 55%;
     }
 }
