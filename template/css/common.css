@@ -333,19 +333,14 @@ a {
 .about::before {
     position: absolute;
     content: "";
-    width: 444px;
-    height: 440px;
-    top: 25%;
-    right: 40%;
+    top: 18%;
+    right: 18%;
+    width: 666px;
+    height: 660px;
     background-image: url("/template/img/01-bg.webp");
     background-position: center;
     background-size: cover;
-    /* rotate: -45deg; */
     z-index: -1;
-
-    /* transform: rotate(45deg) translateY(0); */
-    /* transform: translateY(0);
-    transition: transform 2s ease-out; */
 }
 
 .about__items {
@@ -388,10 +383,10 @@ a {
     }
 
     .about::before {
-        top: 35%;
-        right: 50%;
-        width: 508px;
-        height: 504px;
+        top: 25%;
+        right: 30%;
+        width: 762px;
+        height: 756px;
     }
 
     .about__items {
@@ -432,8 +427,8 @@ a {
 
 @media (min-width: 1200px) {
     .about::before {
-        width: 933px;
-        height: 925px;
+        width: 1395px;
+        height: 1387px;
     }
 
     .about::after {
