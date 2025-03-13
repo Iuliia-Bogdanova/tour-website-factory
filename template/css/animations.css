@@ -1,3 +1,4 @@
+/* Intro */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -66,3 +67,16 @@
         animation: none;
     }
 }
+
+/* Space-img block */
+.space__img,
+.space__bg::after {
+    /* transition: transform 0.1s linear; */
+    transition: width 0.2s linear, height 0.2s linear;
+}
+/* @media (min-width: 1200px) {
+    .space__img,
+    .space__bg::after {
+        transition: transform 0.1s linear;
+    }
+} */
