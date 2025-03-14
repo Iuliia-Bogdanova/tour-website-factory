@@ -43,7 +43,6 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="/template/css/reset.css" />
-        <link rel="stylesheet" href="/template/css/bootstrap-grid.css" />
         <link rel="stylesheet" href="/template/css/ui.css" />
         <link rel="stylesheet" href="/template/css/utility.css" />
         <link rel="stylesheet" href="/template/css/mobile-panel.css" />
@@ -205,10 +204,10 @@
                             эмоции, наблюдая запуск ракет и погружаясь в историю
                             космонавтики на Байконуре и других космодромах.
                         </p>
-                        <!-- Link-btn -->
+                        <!-- Link-btn with spans -->
                         <a
                             href="#tours"
-                            class="fs-17 fw-300 lh-25 more-btn intro__btn"
+                            class="fs-15 fw-300 lh-25 more-btn intro__btn"
                         >
                             <span class="left-top"></span>
                             <span class="right-top"></span>
@@ -325,7 +324,609 @@
                 </div>
             </section>
             <!-- 02-Tours -->
-            <section id="tours" class="tours"></section>
+            <section id="tours" class="tours">
+                <div class="custom-container">
+                    <div class="tours__wrapper d-flex flex-column gap-40">
+                        <h2 class="section__title fs-22 fw-700 lh-31">
+                            <span
+                                class="section-number fs-180 fw-700 section-number-gradient"
+                                >02</span
+                            ><br />Наши туры
+                        </h2>
+                        <!-- Link-btns -->
+                        <div
+                            class="tours__btns d-flex flex-wrap justify-content-between align-items-center gap-26"
+                        >
+                            <a
+                                href="#"
+                                id="btn-manned"
+                                class="fs-15 fw-300 lh-25 tours-btn btn-active btn-manned"
+                                >Туры на пилотируемые пуски ракет</a
+                            >
+                            <a
+                                href="#"
+                                id="btn-cargo"
+                                class="fs-15 fw-300 lh-25 tours-btn btn-cargo"
+                                >Туры на грузовые пуски ракет</a
+                            >
+                            <a
+                                href="#"
+                                id="btn-period"
+                                class="fs-15 fw-300 lh-25 tours-btn btn-period"
+                                >Туры в межпусковой период</a
+                            >
+                        </div>
+                        <!-- Tours__items tours__manned -->
+                        <div
+                            id="tours-manned"
+                            class="tours__manned d-flex flex-wrap justify-content-between align-items-center gap-40"
+                        >
+                            <!-- Tours__manned text -->
+                            <p class="tours__text fs-14 fw-300 lh-25">
+                                Вот заиграла песня Землян «Земля в
+                                иллюминаторе…» и появились они – экипаж новой
+                                космической миссии. Да так начинается наш с вами
+                                стартовый день! И это традиция!!! Тур на запуск
+                                пилотируемого корабля — это шанс увидеть одну из
+                                самых захватывающих сцен космической эры. Мы не
+                                только познакомимся с традициями космонавтов,
+                                историей космодрома и освоения космоса, но и
+                                станем свидетелями выхода наших героев из центра
+                                предполетной подготовки, их доклада о готовности
+                                к пуску перед поездкой к ракете, и, собственно,
+                                невероятного старта их космического пути…
+                            </p>
+                            <!-- Manned__items -->
+                            <div
+                                class="manned__items d-flex flex-column justify-content-between w-100 gap-30"
+                            >
+                                <!-- Tour__rokot -->
+                                <div
+                                    class="tour__rokot d-flex flex-column gap-20"
+                                >
+                                    <!-- Icon + title-price -->
+                                    <div class="info-top d-flex flex-column">
+                                        <!-- Icon -->
+                                        <a href="#" class="tour-icon">
+                                            <img
+                                                class="icon"
+                                                src="/template/img/02-rokot.png"
+                                                alt="Тур Рокот – подробнее"
+                                            />
+                                        </a>
+                                        <!-- Title-price -->
+                                        <div
+                                            class="tour__title-price d-flex flex-row justify-content-between align-items-center gap-20"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="tour-title fs-20 fw-700 lh-22"
+                                                >Рокот</a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="tour-price fs-20 fw-700 lh-34 active-color"
+                                                >87 000 ₽</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <!-- Tour-info -->
+                                    <a class="tour-info fs-15 fw-300 lh-20">
+                                        Длительность 3 дня<br />Вы любитель
+                                        ярких впечатлений, но время – ваш самый
+                                        ценный ресурс? Этот вариант тура для
+                                        вас.
+                                    </a>
+                                    <!-- Price-btn -->
+                                    <div
+                                        class="price-btn d-flex flex-row justify-content-between w-100"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="tour-price fs-20 fw-700 lh-34 active-color"
+                                            >87 000 ₽</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="more-btn more-btn-small d-flex fs-14 fw-300 lh-25"
+                                        >
+                                            <span class="left-top"></span>
+                                            <span class="right-top"></span>
+                                            <span class="right-bottom"></span>
+                                            <span class="left-bottom"></span
+                                            >Подробнее</a
+                                        >
+                                    </div>
+                                    <!-- Divider -->
+                                    <a href="#" class="divider-link w-100"></a>
+                                </div>
+                                <!-- Tour__dive -->
+                                <div
+                                    class="tour__dive d-flex flex-column gap-20"
+                                >
+                                    <!-- Icon + title-price -->
+                                    <div class="info-top d-flex flex-column">
+                                        <!-- Icon -->
+                                        <a href="#" class="tour-icon">
+                                            <img
+                                                class="icon"
+                                                src="/template/img/02-dive.png"
+                                                alt="Тур Полное погружение – подробнее"
+                                            />
+                                        </a>
+                                        <!-- Title-price -->
+                                        <div
+                                            class="tour__title-price d-flex flex-row justify-content-between align-items-center gap-20"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="tour-title fs-20 fw-700 lh-22"
+                                                >Полное погружение</a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="tour-price fs-20 fw-700 lh-34 active-color"
+                                                >95 000 ₽</a
+                                            >
+                                        </div>
+                                    </div>
+
+                                    <!-- Tour-info -->
+                                    <a class="tour-info fs-15 fw-300 lh-20">
+                                        Длительность 6 дней<br />Тур для тех,
+                                        кто в детстве мечтал бороздить просторы
+                                        вселенной став космонавтом, а сейчас
+                                        бесконечной увлечен темой космоса.</a
+                                    >
+                                    <!-- Price-btn -->
+                                    <div
+                                        class="price-btn d-flex flex-row justify-content-between w-100"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="tour-price fs-20 fw-700 lh-34 active-color"
+                                            >95 000 ₽</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="more-btn more-btn-small d-flex fs-14 fw-300 lh-25"
+                                        >
+                                            <span class="left-top"></span>
+                                            <span class="right-top"></span>
+                                            <span class="right-bottom"></span>
+                                            <span class="left-bottom"></span
+                                            >Подробнее</a
+                                        >
+                                    </div>
+                                    <!-- Divider -->
+                                    <a href="#" class="divider-link w-100"></a>
+                                </div>
+                                <!-- Tour__baikonur -->
+                                <div
+                                    class="tour__baikonur d-flex flex-column gap-20"
+                                >
+                                    <!-- Icon + title-price -->
+                                    <div class="info-top d-flex flex-column">
+                                        <!-- Icon -->
+                                        <a href="#" class="tour-icon">
+                                            <img
+                                                class="icon"
+                                                src="/template/img/02-baikonur.png"
+                                                alt="Тур Байконур, космонавты – подробнее"
+                                            />
+                                        </a>
+                                        <!-- Title-price -->
+                                        <div
+                                            class="tour__title-price d-flex flex-row justify-content-between align-items-center gap-10"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="tour-title fs-19 fw-700 lh-22"
+                                                >Байконур, космонавты</a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="tour-price fs-20 fw-700 lh-34 active-color"
+                                                >123 000 ₽</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <!-- Tour-info -->
+                                    <a class="tour-info fs-15 fw-300 lh-20">
+                                        Длительность 4 дня<br />Вы увидите выход
+                                        космонавтов под «Траву у дома», доклад о
+                                        готовности к полету и, конечно, сам
+                                        старт ракеты с пилотируемым космическим
+                                        кораблем.</a
+                                    >
+                                    <!-- Price-btn -->
+                                    <div
+                                        class="price-btn d-flex flex-row justify-content-between w-100"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="tour-price fs-20 fw-700 lh-34 active-color"
+                                            >123 000 ₽</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="more-btn more-btn-small d-flex fs-14 fw-300 lh-25"
+                                        >
+                                            <span class="left-top"></span>
+                                            <span class="right-top"></span>
+                                            <span class="right-bottom"></span>
+                                            <span class="left-bottom"></span
+                                            >Подробнее</a
+                                        >
+                                    </div>
+                                    <!-- Divider -->
+                                    <a href="#" class="divider-link w-100"></a>
+                                </div>
+                                <!-- Tour__vip -->
+                                <div
+                                    class="tour__vip d-flex flex-column gap-20"
+                                >
+                                    <!-- Icon + title-price -->
+                                    <div class="info-top d-flex flex-column">
+                                        <!-- Icon -->
+                                        <a href="#" class="tour-icon">
+                                            <img
+                                                class="icon"
+                                                src="/template/img/02-baikonur.png"
+                                                alt="VIP тур – подробнее"
+                                            />
+                                        </a>
+                                        <!-- Title-price -->
+                                        <div
+                                            class="tour__title-price d-flex flex-row justify-content-between align-items-center gap-20"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="tour-title fs-20 fw-700 lh-22"
+                                                >VIP тур</a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="tour-price fs-20 fw-700 lh-34 active-color"
+                                                >80 000 ₽</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <!-- Tour-info -->
+                                    <a class="tour-info fs-15 fw-300 lh-20">
+                                        Длительность 6 дней<br />Для ценителей
+                                        комфорта наша компания подготовит
+                                        индивидуальную программу, организует
+                                        посещение уникальных объектов,
+                                        предоставит гида, забронирует гостиницу
+                                        высокого класса, обеспечит
+                                        индивидуальный транспорт и
+                                        круглосуточную поддержку личного
+                                        менеджера.</a
+                                    >
+                                    <!-- Price-btn -->
+                                    <div
+                                        class="price-btn d-flex flex-row justify-content-between w-100"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="tour-price fs-20 fw-700 lh-34 active-color"
+                                            >80 000 ₽</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="more-btn more-btn-small d-flex fs-14 fw-300 lh-25"
+                                        >
+                                            <span class="left-top"></span>
+                                            <span class="right-top"></span>
+                                            <span class="right-bottom"></span>
+                                            <span class="left-bottom"></span
+                                            >Подробнее</a
+                                        >
+                                    </div>
+                                    <!-- Divider -->
+                                    <a href="#" class="divider-link w-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tours__items tours__cargo -->
+                        <div
+                            id="tours-cargo"
+                            class="tours__cargo d-flex flex-wrap justify-content-between align-items-center gap-40"
+                        >
+                            <!-- Tours__cargo text -->
+                            <p class="tours__text fs-14 fw-300 lh-25">
+                                «Ключ на старт!»<br />«Есть ключ на старт!»<br />3,2,1…
+                                рокот космодрома и вы в первом ряду! Проводить
+                                важный груз на МКС или космический корабль в
+                                неизведанный космос, вот, что значит тур на
+                                непилотируемый пуск. Программа близка по
+                                насыщенности к программе тура на пилотируемый
+                                пуск, а вот доступность. во всех смыслах,
+                                больше.
+                            </p>
+                            <!-- Cargo__items -->
+                            <div
+                                class="cargo__items d-flex flex-column justify-content-between w-100 gap-30"
+                            >
+                                <!-- Tour__rokot -->
+                                <div
+                                    class="tour__rokot d-flex flex-column gap-20"
+                                >
+                                    <!-- Icon + title-price -->
+                                    <div class="info-top d-flex flex-column">
+                                        <!-- Icon -->
+                                        <a href="#" class="tour-icon">
+                                            <img
+                                                class="icon"
+                                                src="/template/img/02-rokot.png"
+                                                alt="Тур Рокот – подробнее"
+                                            />
+                                        </a>
+                                        <!-- Title-price -->
+                                        <div
+                                            class="tour__title-price d-flex flex-row justify-content-between align-items-center gap-20"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="tour-title fs-20 fw-700 lh-22"
+                                                >Рокот</a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="tour-price fs-20 fw-700 lh-34 active-color"
+                                                >87 000 ₽</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <!-- Tour-info -->
+                                    <a class="tour-info fs-15 fw-300 lh-20">
+                                        Длительность 3 дня<br />Вы любитель
+                                        ярких впечатлений, но время – ваш самый
+                                        ценный ресурс? Этот вариант тура для
+                                        вас.
+                                    </a>
+                                    <!-- Price-btn -->
+                                    <div
+                                        class="price-btn d-flex flex-row justify-content-between w-100"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="tour-price fs-20 fw-700 lh-34 active-color"
+                                            >87 000 ₽</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="more-btn more-btn-small d-flex fs-14 fw-300 lh-25"
+                                        >
+                                            <span class="left-top"></span>
+                                            <span class="right-top"></span>
+                                            <span class="right-bottom"></span>
+                                            <span class="left-bottom"></span
+                                            >Подробнее</a
+                                        >
+                                    </div>
+                                    <!-- Divider -->
+                                    <a href="#" class="divider-link w-100"></a>
+                                </div>
+                                <!-- Tour__dive -->
+                                <div
+                                    class="tour__dive d-flex flex-column gap-20"
+                                >
+                                    <!-- Icon + title-price -->
+                                    <div class="info-top d-flex flex-column">
+                                        <!-- Icon -->
+                                        <a href="#" class="tour-icon">
+                                            <img
+                                                class="icon"
+                                                src="/template/img/02-dive.png"
+                                                alt="Тур Полное погружение – подробнее"
+                                            />
+                                        </a>
+                                        <!-- Title-price -->
+                                        <div
+                                            class="tour__title-price d-flex flex-row justify-content-between align-items-center gap-20"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="tour-title fs-20 fw-700 lh-22"
+                                                >Полное погружение</a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="tour-price fs-20 fw-700 lh-34 active-color"
+                                                >95 000 ₽</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <!-- Tour-info -->
+                                    <a class="tour-info fs-15 fw-300 lh-20">
+                                        Длительность 6 дней<br />Тур для тех,
+                                        кто в детстве мечтал бороздить просторы
+                                        вселенной став космонавтом, а сейчас
+                                        бесконечной увлечен темой космоса.</a
+                                    >
+                                    <!-- Price-btn -->
+                                    <div
+                                        class="price-btn d-flex flex-row justify-content-between w-100"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="tour-price fs-20 fw-700 lh-34 active-color"
+                                            >95 000 ₽</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="more-btn more-btn-small d-flex fs-14 fw-300 lh-25"
+                                        >
+                                            <span class="left-top"></span>
+                                            <span class="right-top"></span>
+                                            <span class="right-bottom"></span>
+                                            <span class="left-bottom"></span
+                                            >Подробнее</a
+                                        >
+                                    </div>
+                                    <!-- Divider -->
+                                    <a href="#" class="divider-link w-100"></a>
+                                </div>
+                                <!-- Tour__baikonur -->
+                                <div
+                                    class="tour__baikonur d-flex flex-column gap-20"
+                                >
+                                    <!-- Icon + title-price -->
+                                    <div class="info-top d-flex flex-column">
+                                        <!-- Icon -->
+                                        <a href="#" class="tour-icon">
+                                            <img
+                                                class="icon"
+                                                src="/template/img/02-baikonur.png"
+                                                alt="Тур Байконур и рокот – подробнее"
+                                            />
+                                        </a>
+                                        <!-- Title-price -->
+                                        <div
+                                            class="tour__title-price d-flex flex-row justify-content-between align-items-center gap-20"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="tour-title fs-20 fw-700 lh-22"
+                                                >Байконур и рокот</a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="tour-price fs-20 fw-700 lh-34 active-color"
+                                                >123 000 ₽</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <!-- Tour-info -->
+                                    <a class="tour-info fs-15 fw-300 lh-20">
+                                        Длительность 4 дня<br />В этом туре вы
+                                        сможете познакомиться с жизнью
+                                        космического города, узнать его историю
+                                        и тайны, стать «стреляющим» и запустить
+                                        модель ракеты</a
+                                    >
+                                    <!-- Price-btn -->
+                                    <div
+                                        class="price-btn d-flex flex-row justify-content-between w-100"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="tour-price fs-20 fw-700 lh-34 active-color"
+                                            >123 000 ₽</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="more-btn more-btn-small d-flex fs-14 fw-300 lh-25"
+                                        >
+                                            <span class="left-top"></span>
+                                            <span class="right-top"></span>
+                                            <span class="right-bottom"></span>
+                                            <span class="left-bottom"></span
+                                            >Подробнее</a
+                                        >
+                                    </div>
+                                    <!-- Divider -->
+                                    <a href="#" class="divider-link w-100"></a>
+                                </div>
+                                <!-- Tour__vip -->
+                                <div
+                                    class="tour__vip d-flex flex-column gap-20"
+                                >
+                                    <!-- Icon + title-price -->
+                                    <div class="info-top d-flex flex-column">
+                                        <!-- Icon -->
+                                        <a href="#" class="tour-icon">
+                                            <img
+                                                class="icon"
+                                                src="/template/img/02-baikonur.png"
+                                                alt="VIP тур – подробнее"
+                                            />
+                                        </a>
+                                        <!-- Title-price -->
+                                        <div
+                                            class="tour__title-price d-flex flex-row justify-content-between align-items-center gap-20"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="tour-title fs-20 fw-700 lh-22"
+                                                >VIP тур</a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="tour-price fs-20 fw-700 lh-34 active-color"
+                                                >80 000 ₽</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <!-- Tour-info -->
+                                    <a class="tour-info fs-15 fw-300 lh-20">
+                                        Длительность 6 дней<br />Для ценителей
+                                        комфорта наша компания подготовит
+                                        индивидуальную программу, организует
+                                        посещение уникальных объектов,
+                                        предоставит гида, забронирует гостиницу
+                                        высокого класса, обеспечит
+                                        индивидуальный транспорт и
+                                        круглосуточную поддержку личного
+                                        менеджера.</a
+                                    >
+                                    <!-- Price-btn -->
+                                    <div
+                                        class="price-btn d-flex flex-row justify-content-between w-100"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="tour-price fs-20 fw-700 lh-34 active-color"
+                                            >80 000 ₽</a
+                                        >
+                                        <a
+                                            href="#"
+                                            class="more-btn more-btn-small d-flex fs-14 fw-300 lh-25"
+                                        >
+                                            <span class="left-top"></span>
+                                            <span class="right-top"></span>
+                                            <span class="right-bottom"></span>
+                                            <span class="left-bottom"></span
+                                            >Подробнее</a
+                                        >
+                                    </div>
+                                    <!-- Divider -->
+                                    <a href="#" class="divider-link w-100"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tours__items tours__period -->
+                        <div
+                            id="tours-period"
+                            class="tours__period d-flex flex-wrap justify-content-between align-items-center gap-40"
+                        >
+                            <!-- Tours__period text -->
+                            <p class="tours__text fs-14 fw-300 lh-25">
+                                Возможность без спешки и суеты окунуться в
+                                историю космических побед Советского союза. Мы
+                                пройдем с вами дорожками Гагарина, Королева и
+                                Брежнева, увидим с лучшего ракурса все музейные
+                                экспонаты, сделаем уникальные снимки, посетим
+                                интересующие вас закрытые объекты. Межпусковой
+                                период – это хорошая возможность организовать
+                                тур в соответствии с вашими индивидуальными
+                                пожеланиями выгодно.
+                            </p>
+                            <a
+                                href="#"
+                                class="more-btn more-btn-small d-flex fs-14 fw-300 lh-25 w-50"
+                            >
+                                <span class="left-top"></span>
+                                <span class="right-top"></span>
+                                <span class="right-bottom"></span>
+                                <span class="left-bottom"></span>Подробнее</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- 03-Sights -->
             <section class="sights sights__bg bg-cover">
                 <div class="custom-container">
@@ -661,12 +1262,16 @@
                                 <div
                                     class="review__author d-flex flex-row align-items-center gap-12"
                                 >
-                                    <div class="author__photo photo-olga"></div>
-                                    <div
+                                    <img
+                                        class="icon"
+                                        src="/template/img/olga.webp"
+                                        alt="Фото автора отзыва"
+                                    />
+                                    <p
                                         class="author__name fs-12 fw-600 lh-15 tt-capitalize"
                                     >
                                         Ольга Сидорова
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
                             <div class="review__card d-flex flex-column gap-16">
@@ -687,12 +1292,16 @@
                                 <div
                                     class="review__author d-flex flex-row align-items-center gap-12"
                                 >
-                                    <div class="author__photo photo-ivan"></div>
-                                    <div
+                                    <img
+                                        class="icon"
+                                        src="/template/img/ivan.webp"
+                                        alt="Фото автора отзыва"
+                                    />
+                                    <p
                                         class="author__name fs-12 fw-600 lh-15 tt-capitalize"
                                     >
                                         Иван Кузнецов
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
                             <div class="review__card d-flex flex-column gap-16">
@@ -711,14 +1320,16 @@
                                 <div
                                     class="review__author d-flex flex-row align-items-center gap-12"
                                 >
-                                    <div
-                                        class="author__photo photo-maria"
-                                    ></div>
-                                    <div
+                                    <img
+                                        class="icon"
+                                        src="/template/img/maria.webp"
+                                        alt="Фото автора отзыва"
+                                    />
+                                    <p
                                         class="author__name fs-12 fw-600 lh-15 tt-capitalize"
                                     >
                                         Мария Сидорова
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
                             <div class="review__card d-flex flex-column gap-16">
@@ -737,14 +1348,16 @@
                                 <div
                                     class="review__author d-flex flex-row align-items-center gap-12"
                                 >
-                                    <div
-                                        class="author__photo photo-dmitry"
-                                    ></div>
-                                    <div
+                                    <img
+                                        class="icon"
+                                        src="/template/img/dmitry.webp"
+                                        alt="Фото автора отзыва"
+                                    />
+                                    <p
                                         class="author__name fs-12 fw-600 lh-15 tt-capitalize"
                                     >
                                         Дмитрий Иванов
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
                         </div>

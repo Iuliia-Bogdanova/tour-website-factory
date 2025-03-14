@@ -1,6 +1,7 @@
 export default function initPlanetsAnimation() {
     document.addEventListener("DOMContentLoaded", () => {
         const aboutSection = document.querySelector(".about");
+        const toursSection = document.querySelector(".tours");
         const whyAsSection = document.querySelector(".why-us");
         const historySection = document.querySelector(".history");
         const historyWrapperSection =
@@ -15,6 +16,8 @@ export default function initPlanetsAnimation() {
                     // Скролл вниз
                     aboutSection.classList.add("scrolling-down");
                     aboutSection.classList.remove("scrolling-up");
+                    toursSection.classList.add("scrolling-down");
+                    toursSection.classList.remove("scrolling-up");
                     whyAsSection.classList.add("scrolling-down");
                     whyAsSection.classList.remove("scrolling-up");
                     historySection.classList.add("scrolling-down");
@@ -27,6 +30,8 @@ export default function initPlanetsAnimation() {
                     // Скролл вверх
                     aboutSection.classList.add("scrolling-up");
                     aboutSection.classList.remove("scrolling-down");
+                    toursSection.classList.add("scrolling-up");
+                    toursSection.classList.remove("scrolling-down");
                     whyAsSection.classList.add("scrolling-up");
                     whyAsSection.classList.remove("scrolling-down");
                     historySection.classList.add("scrolling-up");

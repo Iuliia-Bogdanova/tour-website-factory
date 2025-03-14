@@ -65,6 +65,7 @@
     --text-cards: #8d8d8d;
     --active-color: #ef480e;
     --border-color: rgb(252, 252, 252);
+    --dots-border-color: rgb(141, 141, 141);
 }
 /* Vars END */
 
@@ -212,6 +213,7 @@ a {
 /* Wrappers */
 .intro__wrapper,
 .about__wrapper,
+.tours__wrapper,
 .sights__wrapper,
 .why-us__wrapper,
 .history__wrapper,
@@ -465,6 +467,193 @@ a {
     }
 }
 /* 01-About END*/
+
+/* 02-Tours */
+.tours {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.tours::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 40%;
+    width: 600px;
+    height: 600px;
+    background-image: url("/template/img/02-bg.webp");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.tours__btns {
+    padding-top: 20px;
+}
+
+.tours-btn {
+    width: 100%;
+}
+
+.tours__manned,
+.tours__cargo,
+.tours__period {
+    display: none;
+}
+
+.tours__manned.active,
+.tours__cargo.active,
+.tours__period.active {
+    display: block;
+}
+
+.tours__text {
+    margin-bottom: 40px;
+}
+
+.price-btn .tour-price {
+    display: none;
+}
+
+.price-btn .more-btn-small {
+    width: 50%;
+    margin-left: auto;
+}
+
+.divider-link {
+    display: block;
+    height: 2.5px;
+    border-top: 0.8px dotted var(--text-cards);
+    border-bottom: 0.8px dotted var(--text-cards);
+}
+
+@media (min-width: 640px) {
+    .tours::before {
+        left: 70%;
+        width: 535px;
+        height: 535px;
+    }
+
+    .tours::after {
+        position: absolute;
+        content: "";
+        top: 35%;
+        left: 60%;
+        width: 263px;
+        height: 263px;
+        background-image: url("/template/img/01-planet-desktop.webp");
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+    .tours__wrapper {
+        padding-bottom: 100px;
+    }
+
+    .tours__btns {
+        padding-top: 40px;
+    }
+
+    .tours-btn {
+        width: 60%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .tours__text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .tour__rokot,
+    .tour__dive,
+    .tour__baikonur,
+    .tour__vip {
+        gap: 30px;
+        padding-bottom: 20px;
+    }
+
+    .info-top {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .tour__title-price {
+        flex-grow: 1;
+        min-width: 0;
+    }
+
+    .tour-title,
+    .tour-price {
+        font-size: 28px;
+        line-height: 47px;
+    }
+
+    .tour-info {
+        width: 70%;
+        font-size: 17px;
+        line-height: 23px;
+        padding-bottom: 20px;
+        margin-left: 70px;
+    }
+
+    .price-btn .more-btn-small {
+        width: 30%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tours::after {
+        display: none;
+    }
+
+    .btn-manned,
+    .btn-cargo,
+    .btn-period {
+        width: 30%;
+    }
+
+    .tours__text {
+        margin: 30px 0 70px;
+    }
+
+    .manned__items,
+    .cargo__items {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tour__rokot,
+    .tour__dive,
+    .tour__baikonur,
+    .tour__vip {
+        justify-content: space-between;
+        width: 47%;
+    }
+
+    .tour-info {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .tour__title-price .tour-price {
+        display: none;
+    }
+
+    .price-btn .tour-price {
+        display: block;
+        margin-left: 70px;
+    }
+
+    .tours__period .more-btn-small {
+        width: 20%;
+        font-size: 16px;
+    }
+}
+/* 02-Tours END*/
 
 /* 03-Sights */
 .sights__bg {
@@ -1082,30 +1271,6 @@ a {
 
 .review__author {
     margin-top: -10px;
-}
-
-.author__photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-}
-
-.photo-olga {
-    background-image: url("/template/img/olga.webp");
-}
-
-.photo-ivan {
-    background-image: url("/template/img/ivan.webp");
-}
-
-.photo-maria {
-    background-image: url("/template/img/maria.webp");
-}
-
-.photo-dmitry {
-    background-image: url("/template/img/dmitry.webp");
 }
 
 @media (min-width: 640px) {

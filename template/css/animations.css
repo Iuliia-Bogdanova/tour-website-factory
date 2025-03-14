@@ -77,6 +77,8 @@
 /* Planets animation + js */
 .about::before,
 .about::after,
+.tours::before,
+.tours::after,
 .why-us::before,
 .history::before,
 .history::after,
@@ -99,6 +101,15 @@
 }
 .about.scrolling-up::after {
     transform: translateY(-200px);
+}
+
+.tours.scrolling-down::before,
+.tours.scrolling-down::after {
+    transform: translateY(200px);
+}
+.tours.scrolling-up::before,
+.tours.scrolling-up::after {
+    transform: translateY(-40px);
 }
 
 .why-us.scrolling-down::before {

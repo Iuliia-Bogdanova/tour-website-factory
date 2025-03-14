@@ -16,7 +16,7 @@ button {
 }
 /* Menu-btn END*/
 
-/* Link-btn */
+/* Link-btn with spans */
 .more-btn {
     position: relative;
     display: flex;
@@ -24,6 +24,10 @@ button {
     align-items: center;
     padding: 20px 0;
     background-color: rgba(22, 36, 60, 0.5);
+}
+
+.more-btn-small {
+    padding: 10px 0;
 }
 
 .left-top::before,
@@ -42,7 +46,7 @@ button {
 
 .left-top::before {
     width: 1px;
-    height: 22px;
+    height: 18px;
     top: 0;
     left: 0;
 }
@@ -63,7 +67,7 @@ button {
 
 .right-top::after {
     width: 1px;
-    height: 22px;
+    height: 18px;
     top: 0;
     right: 0;
 }
@@ -77,7 +81,7 @@ button {
 
 .right-bottom::after {
     width: 1px;
-    height: 22px;
+    height: 18px;
     bottom: 0;
     right: 0;
 }
@@ -91,7 +95,7 @@ button {
 
 .left-bottom::after {
     width: 1px;
-    height: 22px;
+    height: 18px;
     bottom: 0;
     left: 0;
 }
@@ -107,4 +111,29 @@ button {
         width: 30%;
     }
 }
-/* Link-btn END */
+/* Link-btn with spans END */
+
+/* Link-btn tours-btn*/
+.tours-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    border-radius: 5px;
+    background-color: inherit;
+    border: 2px solid var(--active-color);
+}
+
+.btn-active {
+    background-color: var(--active-color);
+}
+/* Link-btn tours-btn END */
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
