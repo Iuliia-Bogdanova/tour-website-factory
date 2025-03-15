@@ -58,6 +58,47 @@ button {
 }
 /* Menu-btn & Scroll menu-btn END*/
 
+/* Arrow-up btn */
+.arrow-up {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--arrow-color);
+    background: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.arrow-up.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.arrow-up svg path {
+    stroke: var(--arrow-color);
+    transition: stroke 0.3s;
+}
+
+@media (hover: hover) {
+    .arrow-up:hover {
+        background: var(--arrow-color);
+        border-color: var(--text-primary);
+    }
+
+    .arrow-up:hover svg path {
+        stroke: var(--text-primary);
+    }
+}
+/* Arrow-up btn END */
+
 /* Link-btn with spans */
 .more-btn {
     position: relative;
