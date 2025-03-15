@@ -27,8 +27,14 @@
 .justify-content-center {
     justify-content: center;
 }
+.justify-content-start {
+    justify-content: flex-start;
+}
 .align-items-center {
     align-items: center;
+}
+.align-items-start {
+    align-items: start;
 }
 .w-100 {
     width: 100%;
@@ -110,6 +116,9 @@
 /* .fs-31 {
     font-size: 31px;
 } */
+.fs-37 {
+    font-size: 37px;
+}
 .fs-38 {
     font-size: 38px;
 }
@@ -156,6 +165,9 @@
 .lh-23 {
     line-height: 23px;
 }
+.lh-24 {
+    line-height: 24px;
+}
 .lh-25 {
     line-height: 25px;
 }
@@ -170,6 +182,9 @@
 }
 .lh-34 {
     line-height: 34px;
+}
+.lh-41 {
+    line-height: 41px;
 }
 .lh-60 {
     line-height: 60px;

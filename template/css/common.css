@@ -216,6 +216,7 @@ a {
 .about__wrapper,
 .tours__wrapper,
 .sights__wrapper,
+.contact-form__wrapper,
 .why-us__wrapper,
 .history__wrapper,
 .start__wrapper,
@@ -474,7 +475,8 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    overflow: hidden;
 }
 
 .tours::before {
@@ -784,6 +786,93 @@ a {
     }
 }
 /* 03-Sights END*/
+
+/* Contact-form */
+.form-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* min-width: 214px;
+    min-height: 212px; */
+    /* overflow-x: hidden; */
+}
+
+.form-bg {
+    display: block;
+    width: 214px;
+    height: 212px;
+    margin-left: auto;
+    z-index: -1;
+}
+
+.form-img::after {
+    position: absolute;
+    content: "";
+    width: 266px;
+    height: 278px;
+    top: 0;
+    left: 0;
+    background-image: url("/template/img/form-astronaut.webp");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.contact-form__title-desk {
+    display: none;
+}
+
+.contact-form__text {
+    padding-top: 40px;
+}
+
+@media (min-width: 640px) {
+    .contact-form__title-mob {
+        display: none;
+    }
+
+    .contact-form__title-desk {
+        display: block;
+        padding-top: 80px;
+    }
+
+    .form-bg {
+        width: 365px;
+        height: 370px;
+        margin-right: 20px;
+    }
+
+    .form-img::after {
+        width: 461px;
+        height: 482px;
+        top: 0;
+        left: 0;
+    }
+
+    .contact-form__text {
+        width: 80%;
+        padding-top: 0;
+        font-size: 17px;
+        line-height: 27px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-form__wrapper {
+        flex-direction: row;
+    }
+    .form-img,
+    .contact-form__item {
+        width: 50%;
+    }
+
+    .contact-form__title-desk {
+        padding-top: 0;
+        font-size: 37px;
+    }
+}
+
+/* Contact-form End*/
 
 /* WhyUs */
 .why-us {

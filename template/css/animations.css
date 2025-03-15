@@ -1,4 +1,4 @@
-/* Intro animation */
+/* Intro + about + form animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -46,25 +46,33 @@
     animation: spin 8s linear infinite;
 }
 
-@media (min-width: 640px) {
-    @keyframes float {
-        0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-20px);
-        }
-        100% {
-            transform: translateY(0);
-        }
+@keyframes float {
+    0% {
+        transform: translateY(0);
     }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
+.form-img::after {
+    animation: float 4s infinite ease-in-out;
+}
+
+@media (min-width: 640px) {
     .slide-img {
         animation: float 4s infinite ease-in-out;
     }
 
     .about-icon.icon-1 {
         animation: none;
+    }
+
+    .form-bg {
+        animation: spin 60s linear infinite;
     }
 }
 
