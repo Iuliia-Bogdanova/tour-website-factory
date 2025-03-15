@@ -3,18 +3,60 @@ button {
     cursor: pointer;
 }
 
-/* Menu-btn */
+/* Menu-btn & Scroll menu-btn */
 .header__menu-btn img {
     width: 37px;
     height: 37px;
 }
 
+.scroll__menu-btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-info);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.scroll__menu-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll__menu-btn span {
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: var(--text-primary);
+}
+
+.scroll__menu-btn span:nth-child(1) {
+    top: 17px;
+}
+
+.scroll__menu-btn span:nth-child(2) {
+    top: 23px;
+}
+
+.scroll__menu-btn span:nth-child(3) {
+    top: 29px;
+}
+
 @media (min-width: 1200px) {
-    .header__menu-btn {
+    .header__menu-btn,
+    .scroll__menu-btn {
         display: none;
     }
 }
-/* Menu-btn END*/
+/* Menu-btn & Scroll menu-btn END*/
 
 /* Link-btn with spans */
 .more-btn {

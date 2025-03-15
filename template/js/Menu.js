@@ -1,13 +1,75 @@
+// export default function initMobileMenu() {
+//     document.addEventListener("DOMContentLoaded", () => {
+//         const menuBtn = document.querySelector(".header__menu-btn");
+//         const closeBtn = document.querySelector(".header__menu-close");
+//         const mobileMenu = document.getElementById("menu-mobile");
+//         const overlay = document.getElementById("overlay");
+//         const body = document.body;
+//         const menuLinks = mobileMenu.querySelectorAll("a"); // Все ссылки в меню
+
+//         if (!menuBtn || !mobileMenu || !closeBtn || !overlay || !menuLinks)
+//             return;
+
+//         // Закрыть меню
+//         function closeMenu() {
+//             mobileMenu.classList.remove("active");
+//             overlay.classList.remove("active");
+//             body.classList.remove("menu-open");
+//         }
+
+//         // Открыть меню
+//         menuBtn.addEventListener("click", () => {
+//             mobileMenu.classList.add("active");
+//             overlay.classList.add("active");
+//             body.classList.add("menu-open");
+//         });
+
+//         // Закрыть кнопкой
+//         closeBtn.addEventListener("click", closeMenu);
+
+//         // Закрыть оверлеем
+//         overlay.addEventListener("click", closeMenu);
+
+//         // Закрыть кликом по ссылке
+//         menuLinks.forEach((link) => {
+//             link.addEventListener("click", (event) => {
+//                 // Проверить является ли якорной
+//                 if (link.getAttribute("href").startsWith("#")) {
+//                     event.preventDefault(); // Отменить стандартный переход для плавного скролла
+//                     const targetId = link.getAttribute("href");
+//                     const targetElement = document.querySelector(targetId);
+
+//                     if (targetElement) {
+//                         window.scrollTo({
+//                             top: targetElement.offsetTop,
+//                             behavior: "smooth",
+//                         });
+//                     }
+//                 }
+//                 closeMenu();
+//             });
+//         });
+//     });
+// }
+
 export default function initMobileMenu() {
     document.addEventListener("DOMContentLoaded", () => {
-        const menuBtn = document.querySelector(".header__menu-btn");
+        const menuBtn = document.querySelector(".header__menu-btn"); // Статичная кнопка
+        const scrollMenuBtn = document.getElementById("scroll-menu-btn"); // Фиксированная кнопка
         const closeBtn = document.querySelector(".header__menu-close");
         const mobileMenu = document.getElementById("menu-mobile");
         const overlay = document.getElementById("overlay");
         const body = document.body;
-        const menuLinks = mobileMenu.querySelectorAll("a"); // Все ссылки в меню
+        const menuLinks = mobileMenu.querySelectorAll("a");
 
-        if (!menuBtn || !mobileMenu || !closeBtn || !overlay || !menuLinks)
+        if (
+            !menuBtn ||
+            !scrollMenuBtn ||
+            !mobileMenu ||
+            !closeBtn ||
+            !overlay ||
+            !menuLinks
+        )
             return;
 
         // Закрыть меню
@@ -18,27 +80,28 @@ export default function initMobileMenu() {
         }
 
         // Открыть меню
-        menuBtn.addEventListener("click", () => {
+        function openMenu() {
             mobileMenu.classList.add("active");
             overlay.classList.add("active");
             body.classList.add("menu-open");
-        });
+        }
 
-        // Закрыть кнопкой
+        // Добавляем обработчики для обеих кнопок
+        menuBtn.addEventListener("click", openMenu);
+        scrollMenuBtn.addEventListener("click", openMenu);
+
+        // Закрытие меню
         closeBtn.addEventListener("click", closeMenu);
-
-        // Закрыть оверлеем
         overlay.addEventListener("click", closeMenu);
 
-        // Закрыть кликом по ссылке
+        // Закрытие при клике по ссылке
         menuLinks.forEach((link) => {
             link.addEventListener("click", (event) => {
-                // Проверить является ли якорной
                 if (link.getAttribute("href").startsWith("#")) {
-                    event.preventDefault(); // Отменить стандартный переход для плавного скролла
-                    const targetId = link.getAttribute("href");
-                    const targetElement = document.querySelector(targetId);
-
+                    event.preventDefault();
+                    const targetElement = document.querySelector(
+                        link.getAttribute("href")
+                    );
                     if (targetElement) {
                         window.scrollTo({
                             top: targetElement.offsetTop,
@@ -48,6 +111,22 @@ export default function initMobileMenu() {
                 }
                 closeMenu();
             });
+        });
+
+        // Логика появления и исчезновения кнопки при скролле
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const totalHeight = document.body.scrollHeight;
+
+            if (
+                scrollTop > 350 &&
+                scrollTop + windowHeight < totalHeight - 350
+            ) {
+                scrollMenuBtn.classList.add("visible");
+            } else {
+                scrollMenuBtn.classList.remove("visible");
+            }
         });
     });
 }
