@@ -80,6 +80,9 @@
 }
 
 /* Font Sizes */
+.fs-10 {
+    font-size: 10px;
+}
 .fs-12 {
     font-size: 12px;
 }

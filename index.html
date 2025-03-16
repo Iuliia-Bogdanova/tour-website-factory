@@ -48,6 +48,7 @@
         <link rel="stylesheet" href="/template/css/mobile-panel.css" />
         <link rel="stylesheet" href="/template/css/common.css" />
         <link rel="stylesheet" href="/template/css/animations.css" />
+        <link rel="stylesheet" href="/template/css/intlTelInput.min.css" />
         <!-- Styles END -->
     </head>
     <body>
@@ -1010,7 +1011,7 @@
             <section id="#contact-form" class="contact-form">
                 <div class="custom-container">
                     <div
-                        class="contact-form__wrapper d-flex justify-content-between align-items-center gap-40"
+                        class="contact-form__wrapper d-flex justify-content-between gap-40"
                     >
                         <h3
                             class="block__title contact-form__title-mob fs-28 fw-700 lh-31"
@@ -1025,7 +1026,7 @@
                             />
                         </div>
                         <div
-                            class="contact-form__item d-flex flex-column gap-40"
+                            class="contact-form__item d-flex flex-column align-items-start gap-20"
                         >
                             <h3
                                 class="block__title contact-form__title-desk fs-37 fw-700 lh-41"
@@ -1038,6 +1039,85 @@
                                 начать планировать свое незабываемое
                                 путешествие.
                             </p>
+                            <!-- <div class="form-container"> -->
+                            <form
+                                id="tour-form"
+                                class="go__form d-flex flex-column gap-20"
+                                action="#"
+                                method="POST"
+                            >
+                                <!-- Tel + name -->
+                                <div
+                                    class="form__tel-name d-flex flex-column justify-content-between w-100 gap-20"
+                                >
+                                    <!-- Tel -->
+                                    <div class="intl-tel-input">
+                                        <input
+                                            id="phone"
+                                            type="tel"
+                                            name="phone"
+                                            required
+                                            autocomplete="off"
+                                        />
+                                    </div>
+                                    <!-- Name -->
+                                    <div class="name-input">
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            name="name"
+                                            required
+                                            placeholder="Как к Вам обратиться"
+                                        />
+                                    </div>
+                                </div>
+                                <!--Tour type -->
+                                <div
+                                    class="tour-type d-flex flex-column gap-10"
+                                >
+                                    <label
+                                        for="tour-type"
+                                        class="tour-type__subtitle"
+                                        >Выберите тип тура</label
+                                    >
+                                    <select
+                                        id="tour-type"
+                                        name="tour-type"
+                                        required
+                                    >
+                                        <option value="" selected>
+                                            Туры на пилотируемые пуски
+                                        </option>
+                                        <option value="cargo">
+                                            Туры на грузовые пуски
+                                        </option>
+                                        <option value="interval">
+                                            Туры в межпусковой период
+                                        </option>
+                                    </select>
+                                </div>
+                                <!-- Comment -->
+                                <div class="name-input comment-input">
+                                    <input
+                                        type="text"
+                                        id="comment"
+                                        name="comment"
+                                        required
+                                        placeholder="Комментарий"
+                                    />
+                                </div>
+                                <button
+                                    class="go-btn more-btn more-btn-small fs-17 fw-300 lh-25"
+                                    type="submit"
+                                >
+                                    Поехали
+                                    <span class="left-top"></span>
+                                    <span class="right-top"></span>
+                                    <span class="right-bottom"></span>
+                                    <span class="left-bottom"></span>
+                                </button>
+                            </form>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -1642,6 +1722,10 @@
                 </div>
             </div>
         </footer>
+
+        <!-- intl-tel-input -->
+        <script src="/template/js/intlTelInput.min.js"></script>
+        <script type="module" src="/template/js/utils.js"></script>
 
         <script type="module" src="/template/js/main.js"></script>
     </body>

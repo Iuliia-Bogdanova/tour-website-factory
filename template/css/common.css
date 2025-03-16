@@ -826,6 +826,86 @@ a {
     padding-top: 40px;
 }
 
+.go__form {
+    width: 100%;
+}
+
+.form__tel-name {
+    width: 100%;
+}
+
+.intl-tel-input,
+.name-input,
+.tour-type {
+    border-bottom: 1px solid var(--text-primary);
+}
+
+.intl-tel-input input,
+.name-input input {
+    all: unset;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 0;
+}
+
+.name-input input:focus::placeholder {
+    color: transparent;
+}
+
+/* Intl-tel library*/
+.iti__search-input {
+    padding: 10px;
+}
+
+.iti__country-name {
+    color: var(--bg-cards);
+}
+
+.iti__selected-dial-code {
+    color: var(--text-primary);
+}
+
+.iti__selected-country-primary {
+    padding-left: 0 !important;
+}
+/* Intl-tel library END*/
+
+.tour-type__subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19px;
+    opacity: 0.9;
+}
+
+select {
+    /* width: 100%; */
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: inherit;
+    border: none;
+    color: var(--text-primary);
+}
+
+select:focus,
+select:hover {
+    outline: none;
+}
+
+option {
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--bg-cards);
+}
+
+.go-btn {
+    width: 70%;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
 @media (min-width: 640px) {
     .contact-form__title-mob {
         display: none;
@@ -849,11 +929,31 @@ a {
         left: 0;
     }
 
-    .contact-form__text {
+    .contact-form__item {
         width: 80%;
+    }
+
+    .contact-form__text {
         padding-top: 0;
         font-size: 17px;
         line-height: 27px;
+    }
+
+    .form__tel-name {
+        flex-direction: row;
+    }
+
+    .intl-tel-input,
+    .name-input {
+        width: 50%;
+    }
+
+    .comment-input {
+        width: 100%;
+    }
+    .go-btn {
+        width: 50%;
+        margin-top: 60px;
     }
 }
 
@@ -861,9 +961,15 @@ a {
     .contact-form__wrapper {
         flex-direction: row;
     }
-    .form-img,
+
+    .form-img {
+        width: 50%;
+        margin-top: 40px;
+    }
+
     .contact-form__item {
         width: 50%;
+        gap: 40px;
     }
 
     .contact-form__title-desk {
@@ -871,7 +977,6 @@ a {
         font-size: 37px;
     }
 }
-
 /* Contact-form End*/
 
 /* WhyUs */
