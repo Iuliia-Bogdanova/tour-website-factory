@@ -128,7 +128,7 @@ button {
 }
 
 .left-top::before {
-    width: 1px;
+    width: 2px;
     height: 18px;
     top: 0;
     left: 0;
@@ -136,20 +136,20 @@ button {
 
 .left-top::after {
     width: 24px;
-    height: 1px;
+    height: 2px;
     top: 0;
     left: 0;
 }
 
 .right-top::before {
     width: 24px;
-    height: 1px;
+    height: 2px;
     top: 0;
     right: 0;
 }
 
 .right-top::after {
-    width: 1px;
+    width: 2px;
     height: 18px;
     top: 0;
     right: 0;
@@ -157,13 +157,13 @@ button {
 
 .right-bottom::before {
     width: 24px;
-    height: 1px;
+    height: 2px;
     bottom: 0;
     right: 0;
 }
 
 .right-bottom::after {
-    width: 1px;
+    width: 2px;
     height: 18px;
     bottom: 0;
     right: 0;
@@ -171,13 +171,13 @@ button {
 
 .left-bottom::before {
     width: 24px;
-    height: 1px;
+    height: 2px;
     bottom: 0;
     left: 0;
 }
 
 .left-bottom::after {
-    width: 1px;
+    width: 2px;
     height: 18px;
     bottom: 0;
     left: 0;
