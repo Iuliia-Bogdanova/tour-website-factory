@@ -79,7 +79,6 @@ html {
 
 body {
     min-height: 100vh;
-    /* min-height: 250vh; */
     display: flex;
     flex-direction: column;
     font-family: "Inter", Arial, sans-serif;
@@ -556,7 +555,7 @@ a {
     .tours::after {
         position: absolute;
         content: "";
-        top: 35%;
+        top: 37%;
         left: 60%;
         width: 263px;
         height: 263px;
@@ -678,7 +677,6 @@ a {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #000),
         url("/template/img/03-bg.webp");
     background-position: 50% 40%;
-    /* z-index: -1; */
 }
 
 .sights__images {
@@ -1123,7 +1121,6 @@ option {
     max-width: 390px;
     margin: 0 auto;
     height: 100%;
-    /* overflow-x: hidden; */
 }
 
 .history::before {
@@ -1216,7 +1213,7 @@ option {
         display: block;
         width: 51px;
         height: 50px;
-        top: 50%;
+        top: 65%;
         left: 55%;
         z-index: 1;
     }

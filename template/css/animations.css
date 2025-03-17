@@ -98,58 +98,63 @@
 }
 
 .about.scrolling-down::before {
-    transform: translateY(-300px);
+    transform: translateY(-100px);
 }
 .about.scrolling-up::before {
-    transform: translateY(10px);
+    transform: translateY(100px);
 }
 
 .about.scrolling-down::after {
-    transform: translateY(200px);
-}
-.about.scrolling-up::after {
     transform: translateY(-200px);
 }
-
-.tours.scrolling-down::before,
-.tours.scrolling-down::after {
+.about.scrolling-up::after {
     transform: translateY(200px);
 }
-.tours.scrolling-up::before,
-.tours.scrolling-up::after {
+
+.tours.scrolling-down::before {
     transform: translateY(-40px);
+}
+.tours.scrolling-up::before {
+    transform: translateY(100px);
+}
+
+.tours.scrolling-down::after {
+    transform: translateY(-250px);
+}
+.tours.scrolling-up::after {
+    transform: translateY(250px);
 }
 
 .why-us.scrolling-down::before {
-    transform: translateY(-100px);
+    transform: translateY(-150px);
 }
 .why-us.scrolling-up::before {
-    transform: translateY(100px);
+    transform: translateY(150px);
 }
 
 .history.scrolling-down::before,
 .history.scrolling-down::after {
-    transform: translateY(100px);
+    transform: translateY(-150px);
 }
 .history.scrolling-up::before,
 .history.scrolling-up::after {
-    transform: translateY(-100px);
+    transform: translateY(150px);
 }
 
 .history__wrapper.scrolling-down::before {
     transform: translateY(-150px);
 }
-.history__wrapper.scrolling-down::before {
+.history__wrapper.scrollingup::before {
     transform: translateY(150px);
 }
 
 .start.scrolling-down::before,
 .start.scrolling-down::after {
-    transform: translateY(-100px);
+    transform: translateY(-120px);
 }
 .start.scrolling-up::before,
 .start.scrolling-up::after {
-    transform: translateY(100px);
+    transform: translateY(10px);
 }
 
 /* Meteors */
