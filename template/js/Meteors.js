@@ -4,44 +4,53 @@ export default function initMeteor() {
     const meteor = document.createElement("div");
     meteor.classList.add("meteor");
 
-    // Центр экрана
+    // Генерируются по всему экрану
+    const startX = Math.random() * window.innerWidth;
+    const startY = Math.random() * window.innerHeight;
+    meteor.style.left = `${startX}px`;
+    meteor.style.top = `${startY}px`;
+
+    // Цель движения - центр
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
-    meteor.style.left = `${centerX}px`;
-    meteor.style.top = `${centerY}px`;
 
-    // Случайный угол (0 - 360 градусов)
-    const angle = Math.random() * 2 * Math.PI;
-
-    // Разлетаются далеко за экран
+    // Вектор движения - от центра
+    const deltaX = startX - centerX;
+    const deltaY = startY - centerY;
+    const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
     const maxDistance = Math.max(window.innerWidth, window.innerHeight) * 1.2;
-    const x = Math.cos(angle) * maxDistance;
-    const y = Math.sin(angle) * maxDistance;
 
-    // Установить CSS-переменные для движения
+    // Вычислить координаты за границей экрана
+    const x = (deltaX / distance) * maxDistance;
+    const y = (deltaY / distance) * maxDistance;
+
+    // Установить CSS-переменные для анимации
     meteor.style.setProperty("--x", `${x}px`);
     meteor.style.setProperty("--y", `${y}px`);
 
-    // Разные размеры метеоров
-    const isBig = Math.random() < 0.2; // 20% больших
-    if (isBig) {
+    // Разные размеры и скорости
+    const randomCategory = Math.random();
+    if (randomCategory < 0.2) {
         meteor.style.width = `${Math.random() * 4 + 4}px`; // 4-8px
         meteor.style.height = meteor.style.width;
-        meteor.style.animationDuration = `${Math.random() * 4 + 4}s`; // летят быстрее
+        meteor.style.animationDuration = `${Math.random() * 6 + 6}s`; // Быстрее (6-12s)
+    } else if (randomCategory < 0.6) {
+        meteor.style.width = `${Math.random() * 2 + 2}px`; // 2-4px
+        meteor.style.height = meteor.style.width;
+        meteor.style.animationDuration = `${Math.random() * 6 + 8}s`; // Медленнее (6-14s)
     } else {
         meteor.style.width = `${Math.random() * 2 + 2}px`; // 2-4px
         meteor.style.height = meteor.style.width;
-        meteor.style.animationDuration = `${Math.random() * 4 + 6}s`; // летят медленнее
+        meteor.style.animationDuration = `${Math.random() * 10 + 16}s`; // Медленно (10-26s)
     }
 
     document.body.appendChild(meteor);
 
-    // Удалить метеоры после анимации
-    setTimeout(
-        () => meteor.remove(),
-        parseFloat(meteor.style.animationDuration) * 1000
-    );
+    // Удалить после анимации
+    setTimeout(() => {
+        meteor.remove();
+    }, parseFloat(meteor.style.animationDuration) * 1000);
 }
 
-// Генерация метеоров
-setInterval(initMeteor, 300);
+// Скорость генерации / количество метеоров
+setInterval(initMeteor, 100);
