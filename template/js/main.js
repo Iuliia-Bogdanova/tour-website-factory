@@ -5,6 +5,7 @@ import initToursButtons from "./ToursButtons.js";
 import initArrowUp from "./ArrowUp.js";
 import initTelInput from "./telInput.js";
 import initMeteor from "./Meteors.js";
+import initScrollNumberAnimation from "./NumberAnimation.js";
 
 initMobileMenu();
 initSpaceAnimation();
@@ -13,3 +14,4 @@ initToursButtons();
 initArrowUp();
 initTelInput("#phone");
 initMeteor();
+initScrollNumberAnimation();
