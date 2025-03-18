@@ -11,7 +11,6 @@
 .slider-container {
     position: relative;
     width: 100%;
-    max-width: 1199px;
     overflow: hidden;
 }
 
@@ -24,6 +23,7 @@
 .slider-btns {
     display: flex;
     justify-content: flex-end;
+    padding-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -31,6 +31,37 @@
     width: 280px;
     height: 360px;
     margin-bottom: 60px;
+}
+
+/* Description */
+.description__text-top,
+.description__subtitle,
+.description__text-bottom {
+    text-align: center;
+}
+
+/* .tour__location-item {
+    flex: 1 1 100%;
+} */
+
+.tour__location-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.tour__attention {
+    width: 360px;
+    padding: 20px 16px 20px 10px;
+    background-color: var(--attention-bg);
+    border-radius: 5px;
+}
+
+.tour__attention svg {
+    display: block;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    flex-shrink: 0;
 }
 
 @media (min-width: 640px) {
@@ -56,6 +87,37 @@
         font-size: 18px;
         line-height: 31px;
     }
+
+    .description__text-top {
+        font-size: 18px;
+        line-height: 31px;
+    }
+
+    .description__subtitle {
+        font-size: 36px;
+        line-height: 47px;
+        padding-top: 20px;
+    }
+
+    .description__text-bottom {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .location-item {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .tour__attention {
+        width: 640px;
+        padding: 30px 20px 28px;
+        gap: 16px;
+    }
+
+    .attention-item {
+        line-height: 28px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -66,11 +128,12 @@
     .page-section__tour {
         flex-direction: row;
         justify-content: start;
-        gap: 80px;
+        gap: 150px;
     }
 
     .tour__primary {
         width: 53%;
+        gap: 40px;
     }
 
     .tour__title {
@@ -82,5 +145,43 @@
     .tour__details {
         justify-content: center;
         gap: 36px;
+    }
+
+    .slider {
+        overflow: visible;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+    }
+
+    .slider-btns {
+        display: none;
+    }
+
+    .slider-img {
+        width: 360px;
+    }
+
+    .description__text-top,
+    .description__subtitle,
+    .description__text-bottom,
+    .tour__locations,
+    .tour__attention {
+        width: 70%;
+    }
+
+    .description__subtitle {
+        font-size: 50px;
+        line-height: 64px;
+        padding-top: 20px;
+    }
+
+    .tour__locations {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tour__location-item {
+        width: 47%;
     }
 }
