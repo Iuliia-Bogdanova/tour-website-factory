@@ -51,9 +51,9 @@
 /* Bootstrap Analog END*/
 
 /* Gaps */
-/* .gap-10 {
+.gap-10 {
     gap: 10px;
-} */
+}
 .gap-12 {
     gap: 12px;
 }
@@ -116,9 +116,9 @@
 .fs-28 {
     font-size: 28px;
 }
-/* .fs-31 {
-    font-size: 31px;
-} */
+.fs-32 {
+    font-size: 32px;
+}
 .fs-37 {
     font-size: 37px;
 }
@@ -185,6 +185,9 @@
 }
 .lh-34 {
     line-height: 34px;
+}
+.lh-40 {
+    line-height: 40px;
 }
 .lh-41 {
     line-height: 41px;

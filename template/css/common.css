@@ -128,10 +128,8 @@ a {
     }
 
     .section__title {
-        /* position: relative; */
         font-size: 38px;
         line-height: 48px;
-        /* z-index: 2; */
     }
 
     .section-number {
