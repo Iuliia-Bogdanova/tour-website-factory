@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Байконур, космонавты, рокот</title>
+
+        <!-- Favcons -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <!-- Favcons END -->
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/template/css/reset.css" />
+        <link rel="stylesheet" href="/template/css/ui.css" />
+        <link rel="stylesheet" href="/template/css/utility.css" />
+        <link rel="stylesheet" href="/template/css/mobile-panel.css" />
+        <link rel="stylesheet" href="/template/css/common.css" />
+        <link rel="stylesheet" href="/template/css/pages.css" />
+        <link rel="stylesheet" href="/template/css/animations.css" />
+        <link rel="stylesheet" href="/template/css/intlTelInput.min.css" />
+        <!-- Styles END -->
+    </head>
+
+    <body>
+        <div id="overlay" class="overlay"></div>
+
+        <header id="header" class="header">
+            <div class="custom-container">
+                <div
+                    class="header-wrapper d-flex flex-row justify-content-between align-items-center"
+                >
+                    <!-- Logo -->
+                    <a href="/index.html" class="header__logo">
+                        <img src="/template/img/logo.png" alt="Логотип" />
+                    </a>
+                    <!-- Desktop nav -->
+                    <nav class="header__menu">
+                        <ul
+                            class="menu__list d-flex flex-row align-items-center fs-18 lh-28 tt-capitalize gap-26"
+                        >
+                            <li><a href="/index.html#tours">Туры</a></li>
+                            <li><a href="/index.html#about">О Компании</a></li>
+                            <li><a href="/index.html#reviews">Отзывы</a></li>
+                            <li>
+                                <a href="#footer">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Phone -->
+                    <a
+                        href="tel:+77761222211"
+                        class="header__phone fw-700 fs-20 lh-31"
+                        >+7 (776) 122 2211</a
+                    >
+                    <!-- Socials -->
+                    <ul
+                        class="header__socials d-flex flex-row justify-content-between align-items-center gap-12"
+                    >
+                        <li>
+                            <a
+                                href="https://www.youtube.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                ><img
+                                    class="social-icon"
+                                    src="/template/svg/youtube.svg"
+                                    alt="YouTube"
+                            /></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://rutube.ru/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                ><img
+                                    class="social-icon"
+                                    src="/template/svg/rutube.svg"
+                                    alt="RuTube"
+                            /></a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.whatsapp.com/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                ><img
+                                    class="social-icon whatsapp-icon"
+                                    src="/template/svg/whatsapp.svg"
+                                    alt="WhatsApp"
+                            /></a>
+                        </li>
+                    </ul>
+                    <!-- Mobile nav btn -->
+                    <button class="header__menu-btn" aria-label="Открыть меню">
+                        <img src="/template/svg/menu-dots.svg" alt="Меню" />
+                    </button>
+                    <!-- Mobile nav -->
+                    <nav id="menu-mobile" class="header__menu--mobile">
+                        <div
+                            class="header__menu-top d-flex flex-column justify-content-between gap-26"
+                        >
+                            <a
+                                href="/index.html#header"
+                                class="header__logo--mobile"
+                            >
+                                <img
+                                    src="/template/img/logo.png"
+                                    alt="Логотип"
+                                />
+                            </a>
+                            <span class="header__menu-close fs-42 fw-300"
+                                >&times;</span
+                            >
+                            <ul
+                                class="d-flex flex-column justify-content-between fs-20 fw-300 tt-capitalize gap-16"
+                            >
+                                <li><a href="/index.html#tours">Туры</a></li>
+                                <li>
+                                    <a href="/index.html#about">О Компании</a>
+                                </li>
+                                <li>
+                                    <a href="/index.html#reviews">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#footer">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="header__menu-bottom d-flex flex-column justify-content-between gap-26"
+                        >
+                            <a
+                                href="tel:+77761222211"
+                                class="header__phone d-flex fs-22 fw-700 lh-34"
+                            >
+                                +7 (776) 122 2211
+                            </a>
+                            <ul>
+                                <li class="header__socials">
+                                    <a
+                                        href="https://telegram.org/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="/template/svg/tg-white.svg"
+                                            alt="Telegram"
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://www.whatsapp.com"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src="/template/svg/whatsapp-white.svg"
+                                            alt="WhatsApp"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Scroll menu-btn -->
+        <button
+            id="scroll-menu-btn"
+            class="scroll__menu-btn"
+            aria-label="Открыть меню"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <main class="main">
+            <!-- Immersion page-section -->
+            <section class="immersion page-section">
+                <div class="custom-container">
+                    <div
+                        class="page-section__wrapper d-flex flex-column align-items-center gap-40"
+                    >
+                        <!-- Title + details -->
+                        <div
+                            class="page-section__tour d-flex flex-column justify-content-between gap-40"
+                        >
+                            <!-- Title -->
+                            <div
+                                class="tour__primary d-flex flex-column justify-content-between gap-20"
+                            >
+                                <h1 class="tour__title fs-32 fw-600 lh-40">
+                                    Байконур,<br />космонавты, рокот
+                                </h1>
+                                <p class="tour__text fs-17 lh-28">
+                                    В этом туре все самое важное для космонавтов
+                                    перед полетом. Мы вместе посетим их знаковые
+                                    места: памятник Гагарину, городской музей
+                                    г.Байконур, аллею космонавтов
+                                </p>
+                            </div>
+                            <!-- Details -->
+                            <div
+                                class="tour__details d-flex flex-column gap-10"
+                            >
+                                <div
+                                    class="tour__detail-row d-flex justify-content-start align-items-center gap-30"
+                                >
+                                    <img
+                                        class="tour__detail-icon"
+                                        src="/template/svg/ticket_flight.svg"
+                                        alt="Иконка билета"
+                                    />
+                                    <p class="tour__detail-item fs-15 lh-23">
+                                        Тур без перелета
+                                    </p>
+                                </div>
+                                <div
+                                    class="tour__detail-row d-flex justify-content-start align-items-center gap-30"
+                                >
+                                    <img
+                                        class="tour__detail-icon"
+                                        src="/template/svg/calendar_paper.svg"
+                                        alt="Иконка календаря"
+                                    />
+                                    <p class="tour__detail-item fs-15 lh-23">
+                                        Длительность 4 дня
+                                    </p>
+                                </div>
+                                <div
+                                    class="tour__detail-row d-flex justify-content-start align-items-center gap-30"
+                                >
+                                    <img
+                                        class="tour__detail-icon"
+                                        src="/template/svg/dish_food.svg"
+                                        alt="Иконка тарелки со столовыми приборами"
+                                    />
+                                    <p class="tour__detail-item fs-15 lh-23">
+                                        Питание ВВ (завтраки)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider -->
+                        <div class="slider-container">
+                            <div class="slider-btns">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 320 300"
+                                    height="42"
+                                    width="42"
+                                >
+                                    <rect
+                                        class="tooltip-horizontal-scroll-icon_card"
+                                        x="480"
+                                        width="200"
+                                        height="200"
+                                        rx="5"
+                                        fill="rgba(255,255,255,0.2)"
+                                    ></rect>
+                                    <rect
+                                        class="tooltip-horizontal-scroll-icon_card"
+                                        y="0"
+                                        width="200"
+                                        height="200"
+                                        rx="5"
+                                        fill="rgba(255,255,255,0.2)"
+                                    ></rect>
+                                    <rect
+                                        class="tooltip-horizontal-scroll-icon_card"
+                                        x="240"
+                                        width="200"
+                                        height="200"
+                                        rx="5"
+                                        fill="rgba(255,255,255,0.2)"
+                                    ></rect>
+                                    <path
+                                        class="tooltip-horizontal-scroll-icon_hand"
+                                        d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+                                        fill="rgba(255,255,255,1)"
+                                    ></path>
+                                    <style>
+                                        .tooltip-horizontal-scroll-icon_hand {
+                                            animation: tooltip-horizontal-scroll-icon_anim-scroll-hand
+                                                2s infinite;
+                                        }
+                                        .tooltip-horizontal-scroll-icon_card {
+                                            animation: tooltip-horizontal-scroll-icon_anim-scroll-card
+                                                2s infinite;
+                                        }
+                                        @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+                                            0% {
+                                                transform: translateX(80px)
+                                                    scale(1);
+                                                opacity: 0;
+                                            }
+                                            10% {
+                                                transform: translateX(80px)
+                                                    scale(1);
+                                                opacity: 1;
+                                            }
+                                            20%,
+                                            60% {
+                                                transform: translateX(175px)
+                                                    scale(0.6);
+                                                opacity: 1;
+                                            }
+                                            80% {
+                                                transform: translateX(5px)
+                                                    scale(0.6);
+                                                opacity: 1;
+                                            }
+                                            to {
+                                                transform: translateX(5px)
+                                                    scale(0.6);
+                                                opacity: 0;
+                                            }
+                                        }
+                                        @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+                                            0%,
+                                            60% {
+                                                transform: translateX(0);
+                                            }
+                                            80%,
+                                            to {
+                                                transform: translateX(-240px);
+                                            }
+                                        }
+                                    </style>
+                                </svg>
+                            </div>
+                            <div class="slider d-flex gap-30">
+                                <img
+                                    src="/template/img/slide-1.webp"
+                                    alt="Слайд 1"
+                                    class="slider-img img"
+                                />
+                                <img
+                                    src="/template/img/slide-2.webp"
+                                    alt="Слайд 2"
+                                    class="slider-img img"
+                                />
+                                <img
+                                    src="/template/img/slide-3.webp"
+                                    alt="Слайд 3"
+                                    class="slider-img img"
+                                />
+                            </div>
+                        </div>
+                        <!-- Description -->
+                        <div
+                            class="description__text-top d-flex flex-column align-items-center gap-30 fs-15 fw-300 lh-25"
+                        >
+                            <p>
+                                Вы увидите выход космонавтов под «Траву у дома»,
+                                доклад о готовности к полету и, конечно, сам
+                                старт ракеты с пилотируемым космическим кораблем
+                            </p>
+                        </div>
+                        <h2 class="description__subtitle fs-28 fw-600 lh-37">
+                            Программа тура включает
+                        </h2>
+                        <p class="description__text-bottom fs-16 fw-300 lh-25">
+                            Ощутить дрожь земли, испытать рокот, познакомиться с
+                            опытными космонавтами и проводить новый экипаж на
+                            орбиту Земли.<br />Да, это возможно!
+                        </p>
+                        <!-- Locations -->
+                        <div
+                            class="tour__locations d-flex flex-column w-100 gap-40"
+                        >
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/picture_museum_frame.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Музей г. Байконур
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/picture_museum_frame.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Гагаринская беседка
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/picture_museum_frame.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Аллея космонавтов
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/city_houses_view.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Обзорная экскурсия по городу
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/hat_graduate_student_degree_education.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Международная космическая школа
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/group_team_people.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Традиционный выход космонавтов из гостиницы
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/clean_house_deep_cleaning_shine.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Мемориальный комплекс космодрома «Байконур»
+                                    (музей, ОК «Буран», домики Ю.А. Гагарина и
+                                    С.П. Королева)
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/rocket_startups_startup.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Гагаринский старт
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/check_bullet_sharp_outline.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Доклад космонавтов о готовности к полету
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg//photography_camera.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Наблюдение за пуском ракеты космического
+                                    назначения
+                                </p>
+                            </div>
+                            <div
+                                class="tour__location-item d-flex flex-row align-items-center gap-20"
+                            >
+                                <img
+                                    class="tour__location-icon"
+                                    src="/template/svg/card_wine_card_menu_food.svg"
+                                    alt="Иконка"
+                                />
+                                <p class="location-item fs-15 fw-300 lh-23">
+                                    Банкет по случаю удачного пуска
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Attention -->
+                        <div class="tour__attention d-flex flex-row gap-10">
+                            <svg
+                                role="img"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    fill="#FF0000"
+                                    cx="12"
+                                    cy="12"
+                                    r="12"
+                                ></circle>
+                                <path
+                                    fill="#FFFFFF"
+                                    d="M10.922,6.486c0-0.728,0.406-1.091,1.217-1.091s1.215,0.363,1.215,1.091c0,0.347-0.102,0.617-0.304,0.81
+            c-0.202,0.193-0.507,0.289-0.911,0.289C11.328,7.585,10.922,7.219,10.922,6.486z M13.252,17.792h-2.234V9.604h2.234V17.792z"
+                                ></path>
+                            </svg>
+                            <p class="attention-item fs-16 fw-300 lh-26">
+                                Программа может незначительно меняться в связи с
+                                тем, что комплекс «Байконур» - действующий
+                                режимный объект и все передвижения
+                                согласовываются со службами безопасности.
+                            </p>
+                        </div>
+                        <!-- Tour img -->
+                        <div
+                            class="tour-img__wrap d-flex flex-wrap justify-content-between gap-20"
+                        >
+                            <img
+                                src="/template/img/tour-1.jfif"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-2.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-3.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-4.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-5.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-6.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-7.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-8.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-9.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-10.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/tour-11.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                            <img
+                                src="/template/img/slide-1.webp"
+                                alt="Фото с космодрома"
+                                class="tour-img img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact form -->
+            <section id="#contact-form" class="contact-form">
+                <div class="custom-container">
+                    <div
+                        class="contact-form__wrapper d-flex justify-content-between gap-40"
+                    >
+                        <h3
+                            class="block__title contact-form__title-mob fs-28 fw-700 lh-31"
+                        >
+                            Хотите прикоснуться<br />к звездам?
+                        </h3>
+                        <div class="form-img d-flex">
+                            <img
+                                src="/template/img/form-bg.webp"
+                                alt=""
+                                class="form-bg"
+                            />
+                        </div>
+                        <div
+                            class="contact-form__item d-flex flex-column align-items-start gap-20"
+                        >
+                            <h3
+                                class="block__title contact-form__title-desk fs-37 fw-700 lh-41"
+                            >
+                                Хотите прикоснуться<br />к звездам?
+                            </h3>
+                            <p class="contact-form__text fs-15 fw-300 lh-24">
+                                Свяжитесь с нами!<br />Заполните форму ниже,
+                                чтобы узнать больше о туре, задать вопросы или
+                                начать планировать свое незабываемое
+                                путешествие.
+                            </p>
+                            <!-- <div class="form-container"> -->
+                            <form
+                                id="tour-form"
+                                class="go__form d-flex flex-column gap-20"
+                                action="#"
+                                method="POST"
+                            >
+                                <!-- Tel + name -->
+                                <div
+                                    class="form__tel-name d-flex flex-column justify-content-between w-100 gap-20"
+                                >
+                                    <!-- Tel -->
+                                    <div class="intl-tel-input">
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            required
+                                            autocomplete="off"
+                                        />
+                                    </div>
+                                    <!-- Name -->
+                                    <div class="name-input">
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            name="name"
+                                            required
+                                            placeholder="Как к Вам обратиться"
+                                        />
+                                    </div>
+                                </div>
+                                <!--Tour type -->
+                                <div
+                                    class="tour-type d-flex flex-column gap-10"
+                                >
+                                    <label
+                                        for="tour-type"
+                                        class="tour-type__subtitle"
+                                        >Выберите тип тура</label
+                                    >
+                                    <select
+                                        id="tour-type"
+                                        name="tour-type"
+                                        required
+                                    >
+                                        <option value="manned" selected>
+                                            Туры на пилотируемые пуски
+                                        </option>
+                                        <option value="cargo">
+                                            Туры на грузовые пуски
+                                        </option>
+                                        <option value="interval">
+                                            Туры в межпусковой период
+                                        </option>
+                                    </select>
+                                </div>
+                                <!-- Comment -->
+                                <div class="name-input comment-input">
+                                    <input
+                                        type="text"
+                                        id="comment"
+                                        name="comment"
+                                        required
+                                        placeholder="Комментарий"
+                                    />
+                                </div>
+                                <button
+                                    class="go-btn more-btn more-btn-small fs-17 fw-300 lh-25"
+                                    type="submit"
+                                >
+                                    Поехали
+                                    <span class="left-top"></span>
+                                    <span class="right-top"></span>
+                                    <span class="right-bottom"></span>
+                                    <span class="left-bottom"></span>
+                                </button>
+                            </form>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Arrow-up btn -->
+        <button class="arrow-up" aria-label="Кнопка прокрутки вверх">
+            <svg
+                role="presentation"
+                width="50"
+                height="50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <rect
+                    width="50"
+                    height="50"
+                    rx="50"
+                    fill="none"
+                    fill-opacity="0.90"
+                    stroke="none"
+                ></rect>
+                <path
+                    d="M14 28L25 18l10 10"
+                    stroke="#122b54"
+                    stroke-width="1"
+                    fill="none"
+                ></path>
+            </svg>
+        </button>
+
+        <footer id="footer" class="footer">
+            <div class="footer__bg bg-cover"></div>
+            <div class="custom-container">
+                <div
+                    class="footer__wrapper d-flex justify-content-between gap-26 fs-15"
+                >
+                    <!-- Logo -->
+                    <a href="#header" class="footer__logo">
+                        <img
+                            src="/template/img/logo-white.webp"
+                            alt="Логотип"
+                        />
+                    </a>
+                    <!-- Info links -->
+                    <div
+                        class="footer__links d-flex flex-row gap-26 fw-500 lh-15 tt-uppercase"
+                    >
+                        <a href="#" class="#about">О КОМПАНИИ</a>
+                        <a href="#" class="#tours">ТУРЫ НА БАЙКОНУР</a>
+                    </div>
+                    <!-- Contacts -->
+                    <div
+                        class="footer__contacts d-flex flex-column justify-content-between gap-16"
+                    >
+                        <p class="fw-500 lh-15 tt-uppercase">КОНТАКТЫ</p>
+                        <a
+                            href="tel:+77761222211"
+                            class="fs-15 fw-500 lh-15 tt-uppercase"
+                        >
+                            +7 (776) 122 2211
+                        </a>
+                        <p class="lh-18">
+                            Адрес: 468320, г.Байконур, ул. Мира 11Б,<br />ООО
+                            «Алекс сервис»
+                        </p>
+                        <div class="lh-15">
+                            <span class="fw-700">e-mail:</span>
+                            <a
+                                href="mailto:alextour_baikonur@mail.ru"
+                                class="email-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                alextour_baikonur@mail.ru
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Socials -->
+                    <div class="footer__socials d-flex gap-12">
+                        <a
+                            href="https://telegram.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="/template/svg/tg-white.svg"
+                                alt="Telegram"
+                            />
+                        </a>
+                        <a
+                            href="https://www.whatsapp.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="/template/img/instagram.png"
+                                alt="Instagram"
+                            />
+                        </a>
+                    </div>
+                    <!-- Website development -->
+                    <div class="webdev fw-500 lh-15">
+                        Разработка сайта —
+                        <a
+                            href="https://tursite.org/"
+                            class="email-link td-underline"
+                        >
+                            Фабрика турсайтов
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- intl-tel-input -->
+        <script src="/template/js/intlTelInput.min.js"></script>
+        <script type="module" src="/template/js/utils.js"></script>
+
+        <script type="module" src="/template/js/main.js"></script>
+    </body>
+</html>
