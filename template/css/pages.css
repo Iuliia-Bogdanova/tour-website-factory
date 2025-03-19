@@ -79,6 +79,10 @@
         width: 56%;
     }
 
+    .title-interstart {
+        width: 80%;
+    }
+
     .tour__text {
         font-size: 19px;
         line-height: 31px;
@@ -145,6 +149,10 @@
     .tour__primary {
         width: 53%;
         gap: 40px;
+    }
+
+    .primary-interstart {
+        width: 75%;
     }
 
     .tour__title {
