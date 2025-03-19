@@ -64,6 +64,12 @@
     flex-shrink: 0;
 }
 
+/* Tour img */
+.tour-img {
+    width: 155px;
+    height: 206px;
+}
+
 @media (min-width: 640px) {
     .page-section__wrapper {
         padding: 60px 0;
@@ -117,6 +123,11 @@
 
     .attention-item {
         line-height: 28px;
+    }
+
+    .tour-img {
+        width: 295px;
+        height: 392px;
     }
 }
 
@@ -183,5 +194,10 @@
 
     .tour__location-item {
         width: 47%;
+    }
+
+    .tour-img {
+        width: 275px;
+        height: 365px;
     }
 }
