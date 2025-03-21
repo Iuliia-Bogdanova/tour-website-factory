@@ -370,6 +370,10 @@ a {
     z-index: 1;
 }
 
+.about__text {
+    padding-bottom: 30px;
+}
+
 .about__date {
     width: 100%;
     padding: 0 15px 30px;
@@ -672,10 +676,11 @@ a {
 
 /* 03-Sights */
 .sights__bg {
-    /* position: relative; */
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #000),
         url("/template/img/03-bg.webp");
-    background-position: 50% 40%;
+    background-position: center;
+    /* background-position: 50% 40%; */
+    /* background-position: 50% 50%; */
 }
 
 .sights__images {
@@ -774,6 +779,12 @@ a {
 }
 
 @media (min-width: 1200px) {
+    .sights__bg {
+        background-position: 50% 0;
+        /* background-position: center end; */
+        /* background-position: 50% 100%; */
+    }
+
     .sights__wrapper {
         display: flex;
         flex-direction: row;
