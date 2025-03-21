@@ -1087,7 +1087,7 @@ option {
     .why-us::before {
         width: 880px;
         height: 873px;
-        top: 10%;
+        top: 0;
         right: 75%;
     }
 
@@ -1106,7 +1106,7 @@ option {
     .why-us::before {
         width: 1530px;
         height: 1518px;
-        top: 0;
+        top: -200px;
         right: 75%;
     }
     .why-us__wrapper {
