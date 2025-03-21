@@ -122,6 +122,9 @@
 .fs-28 {
     font-size: 28px;
 }
+.fs-30 {
+    font-size: 30px;
+}
 .fs-31 {
     font-size: 31px;
 }
@@ -133,6 +136,9 @@
 }
 .fs-38 {
     font-size: 38px;
+}
+.fs-40 {
+    font-size: 40px;
 }
 .fs-42 {
     font-size: 42px;
@@ -157,9 +163,9 @@
 .fw-700 {
     font-weight: 700;
 }
-/* .fw-800 {
+.fw-800 {
     font-weight: 800;
-} */
+}
 
 /* Line-height */
 .lh-15 {
@@ -167,6 +173,9 @@
 }
 .lh-18 {
     line-height: 18px;
+}
+.lh-19 {
+    line-height: 19px;
 }
 .lh-20 {
     line-height: 20px;
@@ -201,6 +210,9 @@
 .lh-37 {
     line-height: 37px;
 }
+.lh-39 {
+    line-height: 39px;
+}
 .lh-40 {
     line-height: 40px;
 }
@@ -209,6 +221,9 @@
 }
 .lh-60 {
     line-height: 60px;
+}
+.lh-62 {
+    line-height: 62px;
 }
 .lh-200 {
     line-height: 200px;

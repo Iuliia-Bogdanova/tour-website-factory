@@ -98,7 +98,8 @@ a {
     }
 
     .block__title {
-        font-size: 38px;
+        font-size: 39px;
+        line-height: 41px;
     }
 }
 
@@ -109,10 +110,6 @@ a {
 
     .section__title-text.text-01 {
         width: 47%;
-    }
-
-    .block__title {
-        font-size: 42px;
     }
 }
 
@@ -387,8 +384,8 @@ a {
     }
 
     .about__text {
-        font-size: 17px;
-        line-height: 27px;
+        font-size: 19px;
+        line-height: 29px;
     }
 
     .about__date {
@@ -543,12 +540,12 @@ a {
 
     .tours-btn {
         width: 60%;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 28px;
     }
 
     .tours__text {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 28px;
     }
 
@@ -572,13 +569,13 @@ a {
 
     .tour-title,
     .tour-price {
-        font-size: 28px;
+        font-size: 30px;
         line-height: 47px;
     }
 
     .tour-info {
         width: 70%;
-        font-size: 17px;
+        font-size: 19px;
         line-height: 23px;
         padding-bottom: 20px;
         margin-left: 70px;
@@ -586,7 +583,8 @@ a {
 
     .price-btn .more-btn-small {
         width: 30%;
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 23px;
     }
 }
 
@@ -603,6 +601,8 @@ a {
 
     .tours__text {
         margin: 30px 0 70px;
+        font-size: 19px;
+        line-height: 29px;
     }
 
     .manned__items,
@@ -635,7 +635,6 @@ a {
 
     .tours__period .more-btn-small {
         width: 20%;
-        font-size: 16px;
     }
 }
 /* 02-Tours END*/
@@ -694,8 +693,8 @@ a {
     .sights__text {
         width: 80%;
         margin: 0 auto;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 19px;
+        line-height: 23px;
     }
 
     .sights__images {
@@ -705,6 +704,8 @@ a {
         justify-content: flex-start;
         align-items: center;
         height: 960px;
+        font-size: 20px;
+        line-height: 31px;
     }
 
     .sight__img-1,
@@ -747,8 +748,6 @@ a {
 @media (min-width: 1200px) {
     .sights__bg {
         background-position: 50% 0;
-        /* background-position: center end; */
-        /* background-position: 50% 100%; */
     }
 
     .sights__wrapper {
@@ -765,8 +764,6 @@ a {
         width: 90%;
         margin: 0;
         padding-top: 30px;
-        font-size: 18px;
-        line-height: 24px;
     }
 
     .sights__images {
@@ -830,7 +827,7 @@ a {
     all: unset;
     width: 100%;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     padding: 10px 0;
 }
@@ -860,12 +857,11 @@ a {
 .tour-type__subtitle {
     font-size: 12px;
     font-weight: 300;
-    line-height: 19px;
+    line-height: 18px;
     opacity: 0.9;
 }
 
 select {
-    /* width: 100%; */
     padding: 10px 0;
     font-size: 16px;
     line-height: 22px;
@@ -920,7 +916,7 @@ option {
 
     .contact-form__text {
         padding-top: 0;
-        font-size: 17px;
+        font-size: 19px;
         line-height: 27px;
     }
 
@@ -960,6 +956,11 @@ option {
     .contact-form__title-desk {
         padding-top: 0;
         font-size: 37px;
+    }
+
+    .tour-type__subtitle {
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 /* Contact-form End*/
