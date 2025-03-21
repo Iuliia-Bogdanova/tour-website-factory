@@ -116,8 +116,14 @@
 .fs-26 {
     font-size: 28px;
 }
+.fs-27 {
+    font-size: 27px;
+}
 .fs-28 {
     font-size: 28px;
+}
+.fs-31 {
+    font-size: 31px;
 }
 .fs-32 {
     font-size: 32px;
@@ -134,9 +140,9 @@
 .fs-180 {
     font-size: 180px;
 }
-/* .fs-200 {
+.fs-200 {
     font-size: 200px;
-} */
+}
 
 /* Font Weights */
 .fw-300 {
@@ -186,6 +192,9 @@
 .lh-31 {
     line-height: 31px;
 }
+.lh-32 {
+    line-height: 32px;
+}
 .lh-34 {
     line-height: 34px;
 }
@@ -201,9 +210,9 @@
 .lh-60 {
     line-height: 60px;
 }
-/* .lh-200 {
+.lh-200 {
     line-height: 200px;
-} */
+}
 
 /* Text Transform */
 .tt-uppercase {
