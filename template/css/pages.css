@@ -40,10 +40,6 @@
     text-align: center;
 }
 
-/* .tour__location-item {
-    flex: 1 1 100%;
-} */
-
 .tour__location-icon {
     width: 30px;
     height: 30px;
@@ -79,12 +75,18 @@
         width: 56%;
     }
 
+    .title__baikonur-cargo {
+        width: 100%;
+        font-size: 68px;
+        line-height: 80px;
+    }
+
     .title-interstart {
         width: 80%;
     }
 
     .tour__text {
-        font-size: 19px;
+        font-size: 20px;
         line-height: 31px;
     }
 
@@ -95,16 +97,16 @@
 
     .tour__detail-item {
         font-size: 18px;
-        line-height: 31px;
+        line-height: 28px;
     }
 
     .description__text-top {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 31px;
     }
 
     .description__subtitle {
-        font-size: 36px;
+        font-size: 38px;
         line-height: 47px;
         padding-top: 20px;
     }
@@ -115,7 +117,7 @@
     }
 
     .location-item {
-        font-size: 17px;
+        font-size: 19px;
         line-height: 26px;
     }
 
@@ -166,6 +168,11 @@
         gap: 36px;
     }
 
+    .tour__detail-item {
+        font-size: 20px;
+        line-height: 31px;
+    }
+
     .slider {
         overflow: visible;
         display: flex;
@@ -190,7 +197,7 @@
     }
 
     .description__subtitle {
-        font-size: 50px;
+        font-size: 52px;
         line-height: 64px;
         padding-top: 20px;
     }
