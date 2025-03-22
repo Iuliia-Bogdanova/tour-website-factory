@@ -88,8 +88,11 @@
         width: 90%;
     }
 
-    .title-interstart {
-        width: 80%;
+    .title__interstart {
+        width: 100%;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
     }
 
     .tour__text {
@@ -176,6 +179,11 @@
     .title__immersion-cargo {
         font-size: 66px;
         line-height: 66px;
+    }
+
+    .title__interstart {
+        font-size: 52px;
+        line-height: 62px;
     }
 
     .tour__details {
