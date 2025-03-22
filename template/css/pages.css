@@ -75,6 +75,7 @@
         width: 56%;
     }
 
+    .title__baikonur,
     .title__baikonur-cargo {
         width: 100%;
         font-size: 68px;
@@ -112,7 +113,7 @@
     }
 
     .description__text-bottom {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 30px;
     }
 
@@ -160,6 +161,12 @@
     .tour__title {
         width: 100%;
         font-size: 58px;
+        line-height: 66px;
+    }
+
+    .title__baikonur,
+    .title__baikonur-cargo {
+        font-size: 66px;
         line-height: 66px;
     }
 
