@@ -77,7 +77,8 @@
 
     .title__baikonur,
     .title__baikonur-cargo,
-    .title__immertion-cargo {
+    .title__immersion,
+    .title__immersion-cargo {
         width: 100%;
         font-size: 68px;
         line-height: 80px;
@@ -171,7 +172,8 @@
 
     .title__baikonur,
     .title__baikonur-cargo,
-    .title__immertion-cargo {
+    .title__immersion,
+    .title__immersion-cargo {
         font-size: 66px;
         line-height: 66px;
     }
