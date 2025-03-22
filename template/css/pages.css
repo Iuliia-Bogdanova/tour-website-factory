@@ -76,10 +76,15 @@
     }
 
     .title__baikonur,
-    .title__baikonur-cargo {
+    .title__baikonur-cargo,
+    .title__immertion-cargo {
         width: 100%;
         font-size: 68px;
         line-height: 80px;
+    }
+
+    .title__immertion-cargo {
+        width: 90%;
     }
 
     .title-interstart {
@@ -165,7 +170,8 @@
     }
 
     .title__baikonur,
-    .title__baikonur-cargo {
+    .title__baikonur-cargo,
+    .title__immertion-cargo {
         font-size: 66px;
         line-height: 66px;
     }
