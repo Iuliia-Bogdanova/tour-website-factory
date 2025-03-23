@@ -80,7 +80,9 @@
     .title__immersion,
     .title__immersion-cargo,
     .title__rokot,
-    .title__rokot-cargo {
+    .title__rokot-cargo,
+    .title__vip,
+    .title__vip-cargo {
         width: 100%;
         font-size: 68px;
         line-height: 80px;
@@ -180,7 +182,9 @@
     .title__immersion,
     .title__immersion-cargo,
     .title__rokot,
-    .title__rokot-cargo {
+    .title__rokot-cargo,
+    .title__vip,
+    .title__vip-cargo {
         font-size: 66px;
         line-height: 66px;
     }
