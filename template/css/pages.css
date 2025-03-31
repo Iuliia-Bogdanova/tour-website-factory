@@ -64,6 +64,7 @@
 .tour-img {
     width: 155px;
     height: 206px;
+    object-fit: cover;
 }
 
 @media (min-width: 640px) {
