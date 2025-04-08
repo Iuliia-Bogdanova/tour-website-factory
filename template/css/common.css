@@ -36,7 +36,7 @@ body {
     font-weight: 400;
     color: var(--text-primary);
     background-color: var(--bg-primary);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .main {
@@ -1677,7 +1677,8 @@ option {
     }
 
     .footer__links {
-        gap: 52px;
+        /* gap: 52px; */
+        /* gap: 30px; */
     }
 
     .footer__socials img {
