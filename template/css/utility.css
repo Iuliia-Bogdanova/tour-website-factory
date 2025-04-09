@@ -57,6 +57,10 @@
     gap: 40px;
 }
 
+.gap-80 {
+    gap: 80px;
+}
+
 /* Font Sizes */
 .fs-12 {
     font-size: 12px;
@@ -111,6 +115,9 @@
 }
 .fs-42 {
     font-size: 42px;
+}
+.fs-58 {
+    font-size: 58px;
 }
 .fs-180 {
     font-size: 180px;

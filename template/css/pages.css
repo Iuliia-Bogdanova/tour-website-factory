@@ -27,6 +27,46 @@
     margin-bottom: 20px;
 }
 
+.tooltip-horizontal-scroll-icon_hand {
+    animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite;
+}
+.tooltip-horizontal-scroll-icon_card {
+    animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite;
+}
+@keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+    0% {
+        transform: translateX(80px) scale(1);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(80px) scale(1);
+        opacity: 1;
+    }
+    20%,
+    60% {
+        transform: translateX(175px) scale(0.6);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(5px) scale(0.6);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(5px) scale(0.6);
+        opacity: 0;
+    }
+}
+@keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+    0%,
+    60% {
+        transform: translateX(0);
+    }
+    80%,
+    to {
+        transform: translateX(-240px);
+    }
+}
+
 .slider-img {
     width: 280px;
     height: 360px;
@@ -248,3 +288,59 @@
         height: 365px;
     }
 }
+
+/* Excursions page-section */
+.excursions__bg {
+    position: relative;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("/template/img/excursions-bg.webp");
+}
+
+.primary-excursions {
+    padding: 60px 0;
+}
+
+.title__excursions {
+    margin: 30px 0 54px;
+    text-align: center;
+}
+
+.texte__excursions {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .title__excursions {
+        width: 100%;
+        font-size: 70px;
+    }
+
+    .texte__excursions {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .excursions__bg {
+        background-attachment: fixed;
+    }
+
+    .title__excursions {
+        margin-top: 74px;
+        font-size: 104px;
+    }
+
+    .texte__excursions {
+        width: 98%;
+    }
+}
+/* Excursions page-section END */
