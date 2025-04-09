@@ -19,6 +19,8 @@
     --dots-border-color: rgb(141, 141, 141);
     --arrow-color: #122b54;
     --attention-bg: #1e1a1a;
+    --trips-cards-bg: rgb(34, 43, 59);
+    --trip-more: #1c3661;
 }
 
 html {

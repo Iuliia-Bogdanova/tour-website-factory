@@ -213,6 +213,34 @@ button {
 }
 /* Link-btn tours-btn END */
 
+/* Trip-btns */
+.trip-btn {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: -4px -4px 10px 0px rgba(69, 69, 69, 0.5),
+        4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: background-color, color, border-color,
+        box-shadow 0.2s ease-in-out;
+}
+
+.trip-btn-more {
+    background-color: var(--trip-more);
+}
+
+.trip-btn-subscribe {
+    border: 1px solid var(--text-primary);
+}
+
+@media (hover: hover) {
+    .trip-btn:hover {
+        box-shadow: 0px 2px 3px rgba(0, 11, 48, 0.25);
+    }
+}
+/* Trip-btns END*/
+
 .icon {
     width: 50px;
     height: 50px;

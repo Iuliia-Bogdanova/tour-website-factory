@@ -317,6 +317,48 @@
     text-align: center;
 }
 
+.trips-cards-section__wrapper {
+    align-items: stretch;
+    padding: 105px 0;
+}
+
+.trips-card__wrap {
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 300px;
+    background-color: var(--trips-cards-bg);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.trips-card__wrap > a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.trips-card__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-position: center;
+}
+
+.trips-card__details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 27px 24px;
+}
+
+.details-text {
+    /* padding: 10px 0 0; */
+}
+
+.trips-btns__wrap {
+    padding: 0 30px 24px;
+}
+
 @media (min-width: 640px) {
     .title__trips {
         width: 100%;
@@ -326,6 +368,24 @@
     .texte__trips {
         font-size: 18px;
         line-height: 27px;
+    }
+
+    .trips-cards-section__wrapper {
+        row-gap: 30px;
+    }
+
+    .trips-card__wrap {
+        max-width: 286px;
+    }
+
+    .details-title {
+        min-height: 48px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .details-text {
+        min-height: 140px;
     }
 }
 
@@ -341,6 +401,25 @@
 
     .texte__trips {
         width: 98%;
+    }
+
+    .trips-card__wrap {
+        max-width: 360px;
+    }
+
+    .trips-card__img {
+        height: 210px;
+    }
+
+    .details-title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .details-text,
+    .details-item {
+        font-size: 16px;
+        line-height: 25px;
     }
 }
 /* trips page-section END */
