@@ -289,8 +289,8 @@
     }
 }
 
-/* Excursions page-section */
-.excursions__bg {
+/* trips page-section */
+.trips__bg {
     position: relative;
     width: 100%;
     background-position: 50%;
@@ -304,43 +304,43 @@
         url("/template/img/excursions-bg.webp");
 }
 
-.primary-excursions {
+.primary-trips {
     padding: 60px 0;
 }
 
-.title__excursions {
+.title__trips {
     margin: 30px 0 54px;
     text-align: center;
 }
 
-.texte__excursions {
+.texte__trips {
     text-align: center;
 }
 
 @media (min-width: 640px) {
-    .title__excursions {
+    .title__trips {
         width: 100%;
         font-size: 70px;
     }
 
-    .texte__excursions {
+    .texte__trips {
         font-size: 18px;
         line-height: 27px;
     }
 }
 
 @media (min-width: 1200px) {
-    .excursions__bg {
+    .trips__bg {
         background-attachment: fixed;
     }
 
-    .title__excursions {
+    .title__trips {
         margin-top: 74px;
         font-size: 104px;
     }
 
-    .texte__excursions {
+    .texte__trips {
         width: 98%;
     }
 }
-/* Excursions page-section END */
+/* trips page-section END */
