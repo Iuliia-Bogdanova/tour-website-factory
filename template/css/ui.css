@@ -1,3 +1,87 @@
+/* Overlay & Modals */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s ease, opacity 0.4 ease;
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.overlay-modal {
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.modal-subscribe {
+    background-color: var(--bg-primary);
+
+    @media (min-width: 640px) {
+        background-color: rgba(143, 162, 174, 0.7);
+    }
+}
+
+.modal__card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 9px;
+    background-color: var(--trips-cards-bg);
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+
+    &.active {
+        opacity: 1;
+        cursor: auto;
+    }
+
+    @media (min-width: 640px) {
+        padding: 40px 45px;
+    }
+}
+
+.modal__card-subscribe {
+    min-width: 330px;
+
+    @media (min-width: 640px) {
+        max-width: 460px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 560px;
+    }
+}
+
+.modal__card-title {
+    @media (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+.modal__card-text {
+    text-align: center;
+
+    @media (min-width: 640px) {
+        font-size: 17px;
+        line-height: 26px;
+    }
+}
+/* Overlay & Modals END */
+
 button {
     all: unset;
     cursor: pointer;
@@ -234,17 +318,47 @@ button {
     border: 1px solid var(--text-primary);
 }
 
+.trip-btn-send {
+    background-image: radial-gradient(
+        circle at center,
+        rgba(6, 70, 176, 1) 0%,
+        rgba(47, 1, 102, 1) 100%
+    );
+    box-shadow: 0px 7px 10px -7px rgba(32, 108, 235, 0.5);
+}
+
 @media (hover: hover) {
     .trip-btn:hover {
+        box-shadow: 0px 2px 3px rgba(0, 11, 48, 0.25);
+    }
+
+    .trip-btn-send:hover {
         box-shadow: 0px 2px 3px rgba(0, 11, 48, 0.25);
     }
 }
 /* Trip-btns END*/
 
+/* Icons */
 .icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
+}
+
+.icon-close-cross {
+    position: fixed;
+    top: 20px;
+    right: clamp(30px, 10vw, 100px);
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    stroke: none;
+    fill: var(--text-primary);
+
+    @media (min-width: 640px) {
+        top: 30px;
+        fill: rgb(34, 43, 59);
+    }
 }

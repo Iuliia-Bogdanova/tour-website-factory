@@ -955,6 +955,11 @@ option {
         width: 50%;
     }
 
+    .modal-tel-input,
+    .modal-name-input {
+        width: 100%;
+    }
+
     .comment-input {
         width: 100%;
     }

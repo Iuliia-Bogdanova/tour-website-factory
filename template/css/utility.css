@@ -2,9 +2,9 @@
 .d-flex {
     display: flex;
 }
-.d-block {
+/* .d-block {
     display: block;
-}
+} */
 .flex-wrap {
     flex-wrap: wrap;
 }

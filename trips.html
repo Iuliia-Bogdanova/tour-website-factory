@@ -36,6 +36,29 @@
     </head>
 
     <body>
+        <svg width="0" height="0" class="visually-hidden">
+            <symbol
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 23 23"
+                id="icon-close-cross"
+            >
+                <rect
+                    transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                    x="10.3137085"
+                    y="-3.6862915"
+                    width="2"
+                    height="30"
+                ></rect>
+                <rect
+                    transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                    x="10.3137085"
+                    y="-3.6862915"
+                    width="2"
+                    height="30"
+                ></rect>
+            </symbol>
+        </svg>
+
         <div id="overlay" class="overlay"></div>
 
         <header id="header" class="header">
@@ -243,9 +266,9 @@
                             <div
                                 class="trips-btns__wrap d-flex flex-column justify-content-between gap-12"
                             >
-                                <a href="#" class="trip-btn trip-btn-more"
-                                    >Подробнее</a
-                                >
+                                <button class="trip-btn trip-btn-more">
+                                    Подробнее
+                                </button>
                                 <button class="trip-btn trip-btn-subscribe">
                                     Записаться
                                 </button>
@@ -279,9 +302,9 @@
                             <div
                                 class="trips-btns__wrap d-flex flex-column justify-content-between gap-12"
                             >
-                                <a href="#" class="trip-btn trip-btn-more"
-                                    >Подробнее</a
-                                >
+                                <button class="trip-btn trip-btn-more">
+                                    Подробнее
+                                </button>
                                 <button class="trip-btn trip-btn-subscribe">
                                     Записаться
                                 </button>
@@ -316,9 +339,9 @@
                             <div
                                 class="trips-btns__wrap d-flex flex-column justify-content-between gap-12"
                             >
-                                <a href="#" class="trip-btn trip-btn-more"
-                                    >Подробнее</a
-                                >
+                                <button class="trip-btn trip-btn-more">
+                                    Подробнее
+                                </button>
                                 <button class="trip-btn trip-btn-subscribe">
                                     Записаться
                                 </button>
@@ -354,9 +377,9 @@
                             <div
                                 class="trips-btns__wrap d-flex flex-column justify-content-between gap-12"
                             >
-                                <a href="#" class="trip-btn trip-btn-more"
-                                    >Подробнее</a
-                                >
+                                <button class="trip-btn trip-btn-more">
+                                    Подробнее
+                                </button>
                                 <button class="trip-btn trip-btn-subscribe">
                                     Записаться
                                 </button>
@@ -392,9 +415,9 @@
                             <div
                                 class="trips-btns__wrap d-flex flex-column justify-content-between gap-12"
                             >
-                                <a href="#" class="trip-btn trip-btn-more"
-                                    >Подробнее</a
-                                >
+                                <button class="trip-btn trip-btn-more">
+                                    Подробнее
+                                </button>
                                 <button class="trip-btn trip-btn-subscribe">
                                     Записаться
                                 </button>
@@ -431,9 +454,9 @@
                             <div
                                 class="trips-btns__wrap d-flex flex-column justify-content-between gap-12"
                             >
-                                <a href="#" class="trip-btn trip-btn-more"
-                                    >Подробнее</a
-                                >
+                                <button class="trip-btn trip-btn-more">
+                                    Подробнее
+                                </button>
                                 <button class="trip-btn trip-btn-subscribe">
                                     Записаться
                                 </button>
@@ -668,6 +691,67 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Modal-subscribe -->
+        <div
+            id="overlay-subscribe"
+            class="overlay overlay-modal modal-subscribe active"
+        >
+            <svg class="icon-close-cross" width="23" height="23">
+                <use xlink:href="#icon-close-cross"></use>
+            </svg>
+            <div
+                class="modal__card modal__card-subscribe d-flex flex-column align-items-center gap-20 active"
+            >
+                <div
+                    class="modal__card-top d-flex flex-column align-items-center gap-16"
+                >
+                    <p class="modal__card-title fs-20 fw-600 lh-25">
+                        Свяжитесь с нами!
+                    </p>
+                    <p class="modal__card-text fw-300 lh-23">
+                        Заполните форму ниже, чтобы узнать больше о туре, задать
+                        вопросы или начать планировать свое незабываемое
+                        путешествие.
+                    </p>
+                </div>
+                <form
+                    id="tour-form"
+                    class="go__form d-flex flex-column gap-30"
+                    action="#"
+                    method="POST"
+                >
+                    <!-- Tel + name -->
+                    <div
+                        class="modal__tel-name d-flex flex-column justify-content-between w-100 gap-20"
+                    >
+                        <!-- Tel -->
+                        <div class="intl-tel-input modal-tel-input w-100">
+                            <input
+                                type="tel"
+                                name="phone"
+                                required
+                                autocomplete="off"
+                                placeholder="Ваш номер телефона"
+                            />
+                        </div>
+                        <!-- Name -->
+                        <div class="name-input modal-name-input w-100">
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                placeholder="Как к Вам обратиться"
+                            />
+                        </div>
+                    </div>
+                    <button class="trip-btn trip-btn-send" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
 
         <!-- intl-tel-input -->
         <script src="/template/js/intlTelInput.min.js"></script>
