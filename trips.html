@@ -57,6 +57,15 @@
                     height="30"
                 ></rect>
             </symbol>
+            <symbol
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                id="icon-close-arrow"
+            >
+                <path
+                    d="M10.4142136,5 L11.8284271,6.41421356 L5.829,12.414 L23.4142136,12.4142136 L23.4142136,14.4142136 L5.829,14.414 L11.8284271,20.4142136 L10.4142136,21.8284271 L2,13.4142136 L10.4142136,5 Z"
+                />
+            </symbol>
         </svg>
 
         <div id="overlay" class="overlay"></div>
@@ -692,11 +701,52 @@
             </div>
         </footer>
 
-        <!-- Modal-subscribe -->
-        <!-- <div
-            id="overlay-subscribe"
-            class="overlay overlay-modal modal-subscribe active"
-        > -->
+        <div id="overlay-more" class="overlay overlay-modal modal-more">
+            <svg
+                class="icon-close-arrow modal-close-btn"
+                width="26"
+                height="26"
+            >
+                <use xlink:href="#icon-close-arrow"></use>
+            </svg>
+            <svg
+                class="icon-close-cross modal-close-btn"
+                width="23"
+                height="23"
+            >
+                <use xlink:href="#icon-close-cross"></use>
+            </svg>
+            <div
+                class="modal__card modal__card-more d-flex flex-wrap align-items-center gap-30"
+            >
+                <div class="card-more__slider"></div>
+                <div
+                    class="card-more__description d-flex flex-column justify-content-between gap-26"
+                >
+                    <p class="description-title fs-20 fw-700 lh-28">
+                        Прогулка на лошадях
+                    </p>
+                    <button class="trip-btn trip-btn-more">Записаться</button>
+                    <p class="fw-300 lh-25">
+                        Прогулка верхом по бескрайним казахстанским степям вдоль
+                        знаменитой реки Сырдарья подарит уникальную возможность
+                        почувствовать себя лихим восточным батыром или нежной и
+                        смелой сакской царицей Приаралья.
+                    </p>
+                    <p class="fw-300 lh-25">
+                        Это не просто прогулка, это настоящее приключение. А
+                        общение с умными животными даст массу впечатлений,
+                        особенно если вы никогда не ездили верхом!
+                    </p>
+                    <p class="fw-300 lh-25">
+                        Длительность 1 час.<br /><span class="fw-500"
+                            >Цена 4000 р./чел.</span
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div
             id="overlay-subscribe"
             class="overlay overlay-modal modal-subscribe"

@@ -19,8 +19,9 @@
 }
 
 .overlay-modal {
+    height: 100vh;
+    /* overflow-y: auto; */
     transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    overflow-y: auto;
 }
 
 .modal-subscribe {
@@ -29,6 +30,10 @@
     @media (min-width: 640px) {
         background-color: rgba(143, 162, 174, 0.7);
     }
+}
+
+.modal-more {
+    background-color: var(--trip-more-overlay);
 }
 
 .modal__card {
@@ -77,6 +82,37 @@
     @media (min-width: 640px) {
         font-size: 17px;
         line-height: 26px;
+    }
+}
+
+.card-more__slider,
+.card-more__description {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 1200px) {
+    .card-more__slider,
+    .card-more__description {
+        flex: 0 0 50%;
+    }
+}
+
+.modal__card-more {
+    width: calc(100% - 30px);
+    max-height: 100vh;
+    top: 10%;
+    transform: translate(-50%, 0);
+    overflow-y: auto;
+
+    @media (min-width: 640px) {
+        width: calc(100% - 40px);
+        max-width: 640px;
+        top: 12%;
+    }
+
+    @media (min-width: 1200px) {
+        width: calc(100% - 100px);
+        max-width: 1240px;
     }
 }
 /* Overlay & Modals END */
@@ -358,6 +394,30 @@ button {
 
     @media (min-width: 640px) {
         top: 30px;
-        fill: rgb(34, 43, 59);
+        fill: var(--trips-cards-bg);
+    }
+}
+
+.modal-more .icon-close-cross {
+    visibility: hidden;
+
+    @media (min-width: 640px) {
+        visibility: visible;
+    }
+}
+
+.icon-close-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    stroke: none;
+    fill: var(--trips-cards-bg);
+
+    @media (min-width: 640px) {
+        top: 30px;
+        left: clamp(1px, 10vw, 100px);
     }
 }

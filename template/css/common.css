@@ -21,6 +21,7 @@
     --attention-bg: #1e1a1a;
     --trips-cards-bg: rgb(34, 43, 59);
     --trip-more: #1c3661;
+    --trip-more-overlay: rgb(241, 245, 246);
 }
 
 html {
