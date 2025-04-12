@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
     opacity: 0;
@@ -19,8 +19,8 @@
 }
 
 .overlay-modal {
-    height: 100vh;
-    /* overflow-y: auto; */
+    height: 100%;
+    /* overflow-y: auto; дает второй скролл */
     transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -41,7 +41,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 20px 20px 40px;
     border-radius: 9px;
     background-color: var(--trips-cards-bg);
     cursor: auto;
@@ -85,34 +85,38 @@
     }
 }
 
-.card-more__slider,
-.card-more__description {
-    flex: 1 1 100%;
-}
-
-@media (min-width: 1200px) {
-    .card-more__slider,
-    .card-more__description {
-        flex: 0 0 50%;
-    }
-}
-
 .modal__card-more {
+    position: relative;
+    flex-direction: column;
     width: calc(100% - 30px);
-    max-height: 100vh;
-    top: 10%;
-    transform: translate(-50%, 0);
+    margin: -8px 0 10px;
+    top: 47%;
+    /* transform: translate(-51.75%, -50%); */
     overflow-y: auto;
 
     @media (min-width: 640px) {
         width: calc(100% - 40px);
         max-width: 640px;
-        top: 12%;
+        margin: -4px 0 14px;
     }
 
     @media (min-width: 1200px) {
+        flex-direction: row;
         width: calc(100% - 100px);
         max-width: 1240px;
+        height: auto;
+        top: 40%;
+    }
+}
+
+.card-more__slider,
+.card-more__description {
+    /* flex: 1 1 100%; */
+}
+
+@media (min-width: 1200px) {
+    .card-more__description {
+        flex: 0 0 50%;
     }
 }
 /* Overlay & Modals END */
@@ -382,18 +386,28 @@ button {
     background-size: cover;
 }
 
+.modal-close {
+    min-height: 50px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 16px;
+    cursor: pointer;
+    stroke: none;
+
+    @media (min-width: 640px) {
+        top: 22px;
+    }
+}
+
 .icon-close-cross {
-    position: fixed;
-    top: 20px;
     right: clamp(30px, 10vw, 100px);
     width: 23px;
     height: 23px;
-    cursor: pointer;
-    stroke: none;
     fill: var(--text-primary);
 
     @media (min-width: 640px) {
-        top: 30px;
         fill: var(--trips-cards-bg);
     }
 }
@@ -407,17 +421,12 @@ button {
 }
 
 .icon-close-arrow {
-    position: fixed;
-    top: 20px;
     left: 20px;
     width: 26px;
     height: 26px;
-    cursor: pointer;
-    stroke: none;
     fill: var(--trips-cards-bg);
 
     @media (min-width: 640px) {
-        top: 30px;
         left: clamp(1px, 10vw, 100px);
     }
 }

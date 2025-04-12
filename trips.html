@@ -701,8 +701,27 @@
             </div>
         </footer>
 
-        <div id="overlay-more" class="overlay overlay-modal modal-more">
-            <svg
+        <div
+            id="overlay-more"
+            class="overlay overlay-modal modal-more d-flex flex-column active"
+        >
+            <div class="modal-close">
+                <svg
+                    class="icon-close-arrow modal-close-btn"
+                    width="26"
+                    height="26"
+                >
+                    <use xlink:href="#icon-close-arrow"></use>
+                </svg>
+                <svg
+                    class="icon-close-cross modal-close-btn"
+                    width="23"
+                    height="23"
+                >
+                    <use xlink:href="#icon-close-cross"></use>
+                </svg>
+            </div>
+            <!-- <svg
                 class="icon-close-arrow modal-close-btn"
                 width="26"
                 height="26"
@@ -715,14 +734,35 @@
                 height="23"
             >
                 <use xlink:href="#icon-close-cross"></use>
-            </svg>
-            <div
-                class="modal__card modal__card-more d-flex flex-wrap align-items-center gap-30"
-            >
-                <div class="card-more__slider"></div>
-                <div
-                    class="card-more__description d-flex flex-column justify-content-between gap-26"
-                >
+            </svg> -->
+            <div class="modal__card modal__card-more d-flex gap-30">
+                <div class="card-more__slider d-flex flex-column gap-10 w-100">
+                    <div class="slider__wrap">
+                        <div class="slider-item">
+                            <div class="slide">
+                                <img
+                                    src="/template/img/excursions-horses.webp"
+                                    alt=""
+                                    class="slider-img"
+                                />
+                                <div class="slide__img slide__img-first"></div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide__text">create</div>
+                                <div class="slide__img slide__img-second"></div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide__text">Love</div>
+                                <div class="slide__img slide__img-third"></div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide__text">dream</div>
+                                <div class="slide__img slide__img-fourth"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-more__description d-flex flex-column gap-26">
                     <p class="description-title fs-20 fw-700 lh-28">
                         Прогулка на лошадях
                     </p>
