@@ -66,6 +66,20 @@
                     d="M10.4142136,5 L11.8284271,6.41421356 L5.829,12.414 L23.4142136,12.4142136 L23.4142136,14.4142136 L5.829,14.414 L11.8284271,20.4142136 L10.4142136,21.8284271 L2,13.4142136 L10.4142136,5 Z"
                 />
             </symbol>
+            <symbol
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 7.3 13"
+                id="icon-slider"
+            >
+                <polyline
+                    fill="none"
+                    stroke="#222b3b"
+                    stroke-linejoin="butt"
+                    stroke-linecap="butt"
+                    stroke-width="1"
+                    points="0.5,0.5 6.5,6.5 0.5,12.5"
+                ></polyline>
+            </symbol>
         </svg>
 
         <div id="overlay" class="overlay"></div>
@@ -701,9 +715,10 @@
             </div>
         </footer>
 
+        <!-- Modals -->
         <div
             id="overlay-more"
-            class="overlay overlay-modal modal-more d-flex flex-column active"
+            class="overlay overlay-modal modal-more d-flex flex-column"
         >
             <div class="modal-close">
                 <svg
@@ -721,47 +736,74 @@
                     <use xlink:href="#icon-close-cross"></use>
                 </svg>
             </div>
-            <!-- <svg
-                class="icon-close-arrow modal-close-btn"
-                width="26"
-                height="26"
-            >
-                <use xlink:href="#icon-close-arrow"></use>
-            </svg>
-            <svg
-                class="icon-close-cross modal-close-btn"
-                width="23"
-                height="23"
-            >
-                <use xlink:href="#icon-close-cross"></use>
-            </svg> -->
             <div class="modal__card modal__card-more d-flex gap-30">
-                <div class="card-more__slider d-flex flex-column gap-10 w-100">
+                <div class="card-more__slider d-flex flex-column gap-6 w-100">
                     <div class="slider__wrap">
-                        <div class="slider-item">
-                            <div class="slide">
+                        <button
+                            class="slider__btn slider__btn--prev"
+                            aria-label="Предыдущий слайд"
+                        >
+                            <svg class="icon-slider icon-slider-prev">
+                                <use xlink:href="#icon-slider"></use>
+                            </svg>
+                        </button>
+                        <ul class="slider__slides">
+                            <li class="slider__slide is-active">
                                 <img
                                     src="/template/img/excursions-horses.webp"
-                                    alt=""
-                                    class="slider-img"
+                                    alt="Слайд 1"
+                                    class="slider__img"
                                 />
-                                <div class="slide__img slide__img-first"></div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide__text">create</div>
-                                <div class="slide__img slide__img-second"></div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide__text">Love</div>
-                                <div class="slide__img slide__img-third"></div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide__text">dream</div>
-                                <div class="slide__img slide__img-fourth"></div>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="slider__slide">
+                                <img
+                                    src="/template/img/excursions-photo.webp"
+                                    alt="Слайд 2"
+                                    class="slider__img"
+                                />
+                            </li>
+                            <li class="slider__slide">
+                                <img
+                                    src="/template/img/excursions-quadro.webp"
+                                    alt="Слайд 3"
+                                    class="slider__img"
+                                />
+                            </li>
+                        </ul>
+                        <button
+                            class="slider__btn slider__btn--next"
+                            aria-label="Следующий слайд"
+                        >
+                            <svg class="icon-slider icon-slider-next">
+                                <use xlink:href="#icon-slider"></use>
+                            </svg>
+                        </button>
                     </div>
+                    <ul class="slider__thumbnails d-flex gap-6">
+                        <li class="slider__thumb is-active" data-slide="0">
+                            <img
+                                src="/template/img/excursions-horses.webp"
+                                alt="Миниатюра слайда-1"
+                                class="thumb__img"
+                            />
+                        </li>
+                        <li class="slider__thumb" data-slide="1">
+                            <img
+                                src="/template/img/excursions-photo.webp"
+                                alt="Миниатюра слайда-2"
+                                class="thumb__img"
+                            />
+                        </li>
+                        <li class="slider__thumb" data-slide="2">
+                            <img
+                                src="/template/img/excursions-quadro.webp"
+                                alt="Миниатюра слайда-3"
+                                class="thumb__img"
+                            />
+                        </li>
+                    </ul>
                 </div>
+                <!-- Description -->
                 <div class="card-more__description d-flex flex-column gap-26">
                     <p class="description-title fs-20 fw-700 lh-28">
                         Прогулка на лошадях
@@ -787,6 +829,7 @@
             </div>
         </div>
 
+        <!-- Modal-subscribe -->
         <div
             id="overlay-subscribe"
             class="overlay overlay-modal modal-subscribe"

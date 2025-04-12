@@ -35,6 +35,9 @@
 /* Bootstrap Analog END*/
 
 /* Gaps */
+.gap-6 {
+    gap: 6px;
+}
 .gap-10 {
     gap: 10px;
 }

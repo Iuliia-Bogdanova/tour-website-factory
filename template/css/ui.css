@@ -1,4 +1,4 @@
-/* Overlay & Modals */
+/* Overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -17,109 +17,7 @@
     z-index: 999;
     cursor: pointer;
 }
-
-.overlay-modal {
-    height: 100%;
-    /* overflow-y: auto; дает второй скролл */
-    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.modal-subscribe {
-    background-color: var(--bg-primary);
-
-    @media (min-width: 640px) {
-        background-color: rgba(143, 162, 174, 0.7);
-    }
-}
-
-.modal-more {
-    background-color: var(--trip-more-overlay);
-}
-
-.modal__card {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px 20px 40px;
-    border-radius: 9px;
-    background-color: var(--trips-cards-bg);
-    cursor: auto;
-    opacity: 0;
-    transition: opacity ease-in-out 0.3s;
-
-    @media (min-width: 640px) {
-        padding: 40px 45px;
-    }
-}
-
-.overlay.active .modal__card {
-    opacity: 1;
-}
-
-.modal__card-subscribe {
-    min-width: 330px;
-
-    @media (min-width: 640px) {
-        max-width: 460px;
-    }
-
-    @media (min-width: 1200px) {
-        max-width: 560px;
-    }
-}
-
-.modal__card-title {
-    @media (min-width: 1200px) {
-        font-size: 36px;
-        line-height: 44px;
-    }
-}
-
-.modal__card-text {
-    text-align: center;
-
-    @media (min-width: 640px) {
-        font-size: 17px;
-        line-height: 26px;
-    }
-}
-
-.modal__card-more {
-    position: relative;
-    flex-direction: column;
-    width: calc(100% - 30px);
-    margin: -8px 0 10px;
-    top: 47%;
-    /* transform: translate(-51.75%, -50%); */
-    overflow-y: auto;
-
-    @media (min-width: 640px) {
-        width: calc(100% - 40px);
-        max-width: 640px;
-        margin: -4px 0 14px;
-    }
-
-    @media (min-width: 1200px) {
-        flex-direction: row;
-        width: calc(100% - 100px);
-        max-width: 1240px;
-        height: auto;
-        top: 40%;
-    }
-}
-
-.card-more__slider,
-.card-more__description {
-    /* flex: 1 1 100%; */
-}
-
-@media (min-width: 1200px) {
-    .card-more__description {
-        flex: 0 0 50%;
-    }
-}
-/* Overlay & Modals END */
+/* Overlay END */
 
 button {
     all: unset;
@@ -335,47 +233,6 @@ button {
     background-color: var(--active-color);
 }
 /* Link-btn tours-btn END */
-
-/* Trip-btns */
-.trip-btn {
-    width: 100%;
-    padding: 20px 0;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 14px;
-    box-shadow: -4px -4px 10px 0px rgba(69, 69, 69, 0.5),
-        4px 4px 10px 0px rgba(0, 0, 0, 0.5);
-    transition: background-color, color, border-color,
-        box-shadow 0.2s ease-in-out;
-}
-
-.trip-btn-more {
-    background-color: var(--trip-more);
-}
-
-.trip-btn-subscribe {
-    border: 1px solid var(--text-primary);
-}
-
-.trip-btn-send {
-    background-image: radial-gradient(
-        circle at center,
-        rgba(6, 70, 176, 1) 0%,
-        rgba(47, 1, 102, 1) 100%
-    );
-    box-shadow: 0px 7px 10px -7px rgba(32, 108, 235, 0.5);
-}
-
-@media (hover: hover) {
-    .trip-btn:hover {
-        box-shadow: 0px 2px 3px rgba(0, 11, 48, 0.25);
-    }
-
-    .trip-btn-send:hover {
-        box-shadow: 0px 2px 3px rgba(0, 11, 48, 0.25);
-    }
-}
-/* Trip-btns END*/
 
 /* Icons */
 .icon {
