@@ -146,6 +146,42 @@ export default function initSlider(sliderEl) {
             });
         }
 
+        let startX = 0;
+        let currentX = 0;
+        let isSwiping = false;
+
+        slidesContainer.addEventListener("touchstart", (e) => {
+            if (e.cancelable) e.preventDefault();
+            startX = e.touches[0].clientX;
+            isSwiping = true;
+            slidesContainer.style.transition = "none";
+        });
+
+        slidesContainer.addEventListener("touchmove", (e) => {
+            if (!isSwiping) return;
+            currentX = e.touches[0].clientX;
+            const deltaX = currentX - startX;
+            slidesContainer.style.transform = `translateX(-${
+                currentIndex * slideWidth - deltaX
+            }px)`;
+        });
+
+        slidesContainer.addEventListener("touchend", () => {
+            if (!isSwiping) return;
+            const deltaX = currentX - startX;
+            const threshold = slideWidth * 0.2;
+
+            if (deltaX > threshold) {
+                goToSlide(currentIndex - 1);
+            } else if (deltaX < -threshold) {
+                goToSlide(currentIndex + 1);
+            } else {
+                setPosition(currentIndex, true);
+            }
+
+            isSwiping = false;
+        });
+
         updateThumbs(currentIndex - 1);
     }
 
