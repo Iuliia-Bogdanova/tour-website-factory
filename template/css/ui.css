@@ -287,3 +287,41 @@ button {
         left: clamp(1px, 10vw, 100px);
     }
 }
+
+.icon-zoom {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 10px;
+    padding: 10px;
+    fill: var(--text-primary);
+    transition: opacity 0.3s ease;
+}
+
+@media (hover: hover) {
+    .icon-zoom:hover {
+        opacity: 0.5;
+    }
+}
+
+.icon-close-zoom {
+    right: 10px;
+}
+
+.icon-increase,
+.icon-decrease {
+    right: 65px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+    @media (min-width: 960px) {
+        display: none;
+    }
+}
+
+.icon-increase.active,
+.icon-decrease.active {
+    opacity: 1;
+    pointer-events: auto;
+}

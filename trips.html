@@ -73,12 +73,67 @@
             >
                 <polyline
                     fill="none"
-                    stroke="#222b3b"
+                    stroke="currentColor"
                     stroke-linejoin="butt"
                     stroke-linecap="butt"
                     stroke-width="1"
                     points="0.5,0.5 6.5,6.5 0.5,12.5"
                 ></polyline>
+            </symbol>
+            <symbol
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 24"
+                fill="none"
+                id="icon-increase"
+            >
+                <path
+                    d="M22.832 22L17.8592 17.0273"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                ></path>
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.58591 3.7511C0.917768 7.41924 0.917768 13.367 4.58591 17.0352C8.25405 20.7033 14.2019 20.7033 17.87 17.0352C21.5381 13.367 21.5381 7.41924 17.87 3.7511C14.2019 0.0829653 8.25405 0.0829653 4.58591 3.7511Z"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                ></path>
+                <path
+                    d="M6.25781 10.3931H16.2035"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                ></path>
+                <path
+                    d="M11.2305 15.3662V5.42053"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                ></path>
+            </symbol>
+            <symbol
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                id="icon-decrease"
+            >
+                <path
+                    d="M21.9961 22L17.0233 17.0273"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                ></path>
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.74997 3.7511C0.0818308 7.41924 0.0818308 13.367 3.74997 17.0352C7.41811 20.7033 13.3659 20.7033 17.0341 17.0352C20.7022 13.367 20.7022 7.41924 17.0341 3.7511C13.3659 0.0829653 7.41811 0.0829653 3.74997 3.7511Z"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                ></path>
+                <path
+                    d="M5.41797 10.3931H15.3637"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                ></path>
             </symbol>
         </svg>
 
@@ -1507,6 +1562,48 @@
                         >
                     </p>
                 </div>
+            </div>
+        </div>
+
+        <!-- Modal-zoom -->
+        <div
+            id="overlay-zoom"
+            class="overlay overlay-modal modal-zoom d-flex flex-column"
+        >
+            <svg
+                class="modal-close-btn icon-zoom icon-close-zoom"
+                width="20"
+                height="20"
+            >
+                <use xlink:href="#icon-close-cross"></use>
+            </svg>
+            <svg class="icon-zoom icon-decrease" width="20" height="20">
+                <use xlink:href="#icon-decrease"></use>
+            </svg>
+            <svg class="icon-zoom icon-increase" width="20" height="20">
+                <use xlink:href="#icon-increase"></use>
+            </svg>
+            <div class="slider__wrap slider__wrap--zoom">
+                <button
+                    class="slider__btn slider__btn--prev slider__btn--zoom"
+                    aria-label="Предыдущий слайд"
+                >
+                    <svg class="icon-slider icon-slider-prev">
+                        <use xlink:href="#icon-slider"></use>
+                    </svg>
+                </button>
+                <ul class="slider__slides slider__slides--zoom d-flex flex-row">
+                    <!-- zoom slides -->
+                    <img src="/template/img/excursions-horses.webp" alt="" />
+                </ul>
+                <button
+                    class="slider__btn slider__btn--next slider__btn--zoom"
+                    aria-label="Следующий слайд"
+                >
+                    <svg class="icon-slider icon-slider-next">
+                        <use xlink:href="#icon-slider"></use>
+                    </svg>
+                </button>
             </div>
         </div>
 
