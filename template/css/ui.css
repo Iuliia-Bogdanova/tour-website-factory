@@ -20,8 +20,19 @@
 /* Overlay END */
 
 button {
-    all: unset;
+    /* all: unset; */
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
     cursor: pointer;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 /* Menu-btn & Scroll menu-btn */
@@ -128,6 +139,10 @@ button {
     align-items: center;
     padding: 20px 0;
     background-color: rgba(22, 36, 60, 0.5);
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .more-btn-small {
@@ -227,6 +242,10 @@ button {
     border-radius: 5px;
     background-color: inherit;
     border: 2px solid var(--active-color);
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .btn-active {
@@ -252,6 +271,10 @@ button {
     top: 16px;
     cursor: pointer;
     stroke: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
 
     @media (min-width: 640px) {
         top: 22px;

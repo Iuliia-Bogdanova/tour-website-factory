@@ -57,6 +57,7 @@ body.modal-open {
 a {
     text-decoration: none;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Container, section-, block- */
