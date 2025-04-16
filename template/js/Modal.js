@@ -165,157 +165,157 @@ export default function initModal() {
             }
         });
 
-        // Zoom modal
-        document
-            .querySelectorAll(".slider__slide .slider__img")
-            .forEach((img) => {
-                img.addEventListener("click", () => {
-                    const zoomModal = document.getElementById("overlay-zoom");
-                    if (zoomModal) {
-                        zoomModal.classList.add("active");
-                        document.body.classList.add("modal-open");
-                        setupModalClose(zoomModal);
-                        setupZoomControls();
-                    }
-                });
-            });
+        // Zoom modal - не отрегулировано взаимодействие с родительским слайдером Slider.js
+        // document
+        //     .querySelectorAll(".slider__slide .slider__img")
+        //     .forEach((img) => {
+        //         img.addEventListener("click", () => {
+        //             const zoomModal = document.getElementById("overlay-zoom");
+        //             if (zoomModal) {
+        //                 zoomModal.classList.add("active");
+        //                 document.body.classList.add("modal-open");
+        //                 setupModalClose(zoomModal);
+        //                 setupZoomControls();
+        //             }
+        //         });
+        //     });
 
-        function setupZoomControls() {
-            const zoomSlides = document.querySelector(".slider__slides--zoom");
-            const increaseBtn = document.querySelector(".icon-increase");
-            const decreaseBtn = document.querySelector(".icon-decrease");
+        // function setupZoomControls() {
+        //     const zoomSlides = document.querySelector(".slider__slides--zoom");
+        //     const increaseBtn = document.querySelector(".icon-increase");
+        //     const decreaseBtn = document.querySelector(".icon-decrease");
 
-            let isZoomed = false;
-            const isMobile = window.innerWidth < 960;
+        //     let isZoomed = false;
+        //     const isMobile = window.innerWidth < 960;
 
-            const applyZoomState = () => {
-                if (!isMobile) {
-                    zoomSlides.style.width = "";
-                    zoomSlides.style.height = "";
-                    zoomSlides.style.maxWidth = "1000px";
-                    zoomSlides.style.overflow = "hidden";
-                    zoomSlides.style.cursor = "default";
+        //     const applyZoomState = () => {
+        //         if (!isMobile) {
+        //             zoomSlides.style.width = "";
+        //             zoomSlides.style.height = "";
+        //             zoomSlides.style.maxWidth = "1000px";
+        //             zoomSlides.style.overflow = "hidden";
+        //             zoomSlides.style.cursor = "default";
 
-                    zoomSlides.querySelectorAll("img").forEach((img) => {
-                        img.style.width = "100%";
-                        img.style.height = "100%";
-                        img.style.objectFit = "cover";
-                        img.style.cursor = "default";
-                    });
+        //             zoomSlides.querySelectorAll("img").forEach((img) => {
+        //                 img.style.width = "100%";
+        //                 img.style.height = "100%";
+        //                 img.style.objectFit = "cover";
+        //                 img.style.cursor = "default";
+        //             });
 
-                    increaseBtn?.classList.remove("active");
-                    decreaseBtn?.classList.remove("active");
-                    return;
-                }
+        //             increaseBtn?.classList.remove("active");
+        //             decreaseBtn?.classList.remove("active");
+        //             return;
+        //         }
 
-                if (isZoomed) {
-                    zoomSlides.style.width = "1000px";
-                    zoomSlides.style.height = "560px";
-                    zoomSlides.style.maxWidth = "none";
-                    zoomSlides.style.overflow = "hidden";
+        //         if (isZoomed) {
+        //             zoomSlides.style.width = "1000px";
+        //             zoomSlides.style.height = "560px";
+        //             zoomSlides.style.maxWidth = "none";
+        //             zoomSlides.style.overflow = "hidden";
 
-                    zoomSlides.querySelectorAll("img").forEach((img) => {
-                        img.style.width = "1000px";
-                        img.style.height = "560px";
-                        img.style.objectFit = "contain";
-                        img.style.cursor = "zoom-out";
-                    });
+        //             zoomSlides.querySelectorAll("img").forEach((img) => {
+        //                 img.style.width = "1000px";
+        //                 img.style.height = "560px";
+        //                 img.style.objectFit = "contain";
+        //                 img.style.cursor = "zoom-out";
+        //             });
 
-                    increaseBtn?.classList.remove("active");
-                    decreaseBtn?.classList.add("active");
-                } else {
-                    zoomSlides.style.width = "";
-                    zoomSlides.style.height = "";
-                    zoomSlides.style.maxWidth = "100%";
-                    zoomSlides.style.overflow = "hidden";
+        //             increaseBtn?.classList.remove("active");
+        //             decreaseBtn?.classList.add("active");
+        //         } else {
+        //             zoomSlides.style.width = "";
+        //             zoomSlides.style.height = "";
+        //             zoomSlides.style.maxWidth = "100%";
+        //             zoomSlides.style.overflow = "hidden";
 
-                    zoomSlides.querySelectorAll("img").forEach((img) => {
-                        img.style.width = "100%";
-                        img.style.height = "100%";
-                        img.style.objectFit = "cover";
-                        img.style.cursor = "zoom-in";
-                    });
+        //             zoomSlides.querySelectorAll("img").forEach((img) => {
+        //                 img.style.width = "100%";
+        //                 img.style.height = "100%";
+        //                 img.style.objectFit = "cover";
+        //                 img.style.cursor = "zoom-in";
+        //             });
 
-                    increaseBtn?.classList.add("active");
-                    decreaseBtn?.classList.remove("active");
-                }
-            };
+        //             increaseBtn?.classList.add("active");
+        //             decreaseBtn?.classList.remove("active");
+        //         }
+        //     };
 
-            // Кнопки зума
-            if (isMobile) {
-                increaseBtn?.addEventListener("click", () => {
-                    isZoomed = true;
-                    applyZoomState();
-                });
+        //     // Кнопки зума
+        //     if (isMobile) {
+        //         increaseBtn?.addEventListener("click", () => {
+        //             isZoomed = true;
+        //             applyZoomState();
+        //         });
 
-                decreaseBtn?.addEventListener("click", () => {
-                    isZoomed = false;
-                    applyZoomState();
-                });
+        //         decreaseBtn?.addEventListener("click", () => {
+        //             isZoomed = false;
+        //             applyZoomState();
+        //         });
 
-                zoomSlides.addEventListener("click", (e) => {
-                    if (e.target.tagName === "IMG") {
-                        isZoomed = !isZoomed;
-                        applyZoomState();
-                    }
-                });
+        //         zoomSlides.addEventListener("click", (e) => {
+        //             if (e.target.tagName === "IMG") {
+        //                 isZoomed = !isZoomed;
+        //                 applyZoomState();
+        //             }
+        //         });
 
-                // Drag-to-scroll при увеличении
-                let isDragging = false;
-                let startX, startY, scrollLeft, scrollTop;
+        //         // Drag-to-scroll при увеличении
+        //         let isDragging = false;
+        //         let startX, startY, scrollLeft, scrollTop;
 
-                zoomSlides.addEventListener("mousedown", (e) => {
-                    if (!isZoomed) return;
-                    isDragging = true;
-                    startX = e.pageX - zoomSlides.offsetLeft;
-                    startY = e.pageY - zoomSlides.offsetTop;
-                    scrollLeft = zoomSlides.scrollLeft;
-                    scrollTop = zoomSlides.scrollTop;
-                });
+        //         zoomSlides.addEventListener("mousedown", (e) => {
+        //             if (!isZoomed) return;
+        //             isDragging = true;
+        //             startX = e.pageX - zoomSlides.offsetLeft;
+        //             startY = e.pageY - zoomSlides.offsetTop;
+        //             scrollLeft = zoomSlides.scrollLeft;
+        //             scrollTop = zoomSlides.scrollTop;
+        //         });
 
-                zoomSlides.addEventListener("mouseleave", () => {
-                    isDragging = false;
-                });
+        //         zoomSlides.addEventListener("mouseleave", () => {
+        //             isDragging = false;
+        //         });
 
-                zoomSlides.addEventListener("mouseup", () => {
-                    isDragging = false;
-                });
+        //         zoomSlides.addEventListener("mouseup", () => {
+        //             isDragging = false;
+        //         });
 
-                zoomSlides.addEventListener("mousemove", (e) => {
-                    if (!isDragging || !isZoomed) return;
-                    e.preventDefault();
-                    const x = e.pageX - zoomSlides.offsetLeft;
-                    const y = e.pageY - zoomSlides.offsetTop;
-                    zoomSlides.scrollLeft = scrollLeft - (x - startX);
-                    zoomSlides.scrollTop = scrollTop - (y - startY);
-                });
+        //         zoomSlides.addEventListener("mousemove", (e) => {
+        //             if (!isDragging || !isZoomed) return;
+        //             e.preventDefault();
+        //             const x = e.pageX - zoomSlides.offsetLeft;
+        //             const y = e.pageY - zoomSlides.offsetTop;
+        //             zoomSlides.scrollLeft = scrollLeft - (x - startX);
+        //             zoomSlides.scrollTop = scrollTop - (y - startY);
+        //         });
 
-                // Touch events
-                zoomSlides.addEventListener("touchstart", (e) => {
-                    if (!isZoomed) return;
-                    const touch = e.touches[0];
-                    isDragging = true;
-                    startX = touch.pageX - zoomSlides.offsetLeft;
-                    startY = touch.pageY - zoomSlides.offsetTop;
-                    scrollLeft = zoomSlides.scrollLeft;
-                    scrollTop = zoomSlides.scrollTop;
-                });
+        //         // Touch events
+        //         zoomSlides.addEventListener("touchstart", (e) => {
+        //             if (!isZoomed) return;
+        //             const touch = e.touches[0];
+        //             isDragging = true;
+        //             startX = touch.pageX - zoomSlides.offsetLeft;
+        //             startY = touch.pageY - zoomSlides.offsetTop;
+        //             scrollLeft = zoomSlides.scrollLeft;
+        //             scrollTop = zoomSlides.scrollTop;
+        //         });
 
-                zoomSlides.addEventListener("touchend", () => {
-                    isDragging = false;
-                });
+        //         zoomSlides.addEventListener("touchend", () => {
+        //             isDragging = false;
+        //         });
 
-                zoomSlides.addEventListener("touchmove", (e) => {
-                    if (!isDragging || !isZoomed) return;
-                    const touch = e.touches[0];
-                    const x = touch.pageX - zoomSlides.offsetLeft;
-                    const y = touch.pageY - zoomSlides.offsetTop;
-                    zoomSlides.scrollLeft = scrollLeft - (x - startX);
-                    zoomSlides.scrollTop = scrollTop - (y - startY);
-                });
-            }
+        //         zoomSlides.addEventListener("touchmove", (e) => {
+        //             if (!isDragging || !isZoomed) return;
+        //             const touch = e.touches[0];
+        //             const x = touch.pageX - zoomSlides.offsetLeft;
+        //             const y = touch.pageY - zoomSlides.offsetTop;
+        //             zoomSlides.scrollLeft = scrollLeft - (x - startX);
+        //             zoomSlides.scrollTop = scrollTop - (y - startY);
+        //         });
+        //     }
 
-            applyZoomState();
-        }
+        //     applyZoomState();
+        // }
     });
 }

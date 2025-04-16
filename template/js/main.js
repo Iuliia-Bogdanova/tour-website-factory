@@ -11,9 +11,7 @@ import initToursButtons from "./ToursButtons.js";
 
 initMobileMenu();
 initModal();
-// initSlider();
-// console.log(document.querySelectorAll(".card-more__slider"));
-
+// initSlider(); вызываем из Modal.js
 initSpaceAnimation();
 initArrowUp();
 initTelInput("input[type='tel']");

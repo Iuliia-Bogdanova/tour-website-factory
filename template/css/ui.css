@@ -288,7 +288,7 @@ button {
     }
 }
 
-.icon-zoom {
+/* .icon-zoom {
     position: absolute;
     width: auto;
     height: auto;
@@ -324,4 +324,4 @@ button {
 .icon-decrease.active {
     opacity: 1;
     pointer-events: auto;
-}
+} */
